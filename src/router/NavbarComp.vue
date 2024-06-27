@@ -1,11 +1,13 @@
 <template>   
-    <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/">Education</router-link> |
-        <router-link to="/">Projects</router-link> |
-        <router-link to="/">Contact</router-link> |
-        <router-link to="/">Testimonials</router-link>
+    <nav class="navbar navbar-expand-lg fixed-top shadow d-flex">
+        <div class="navbar-nav  justify-content-end">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link> |
+            <router-link to="/education">Education</router-link> |
+            <router-link to="/projects">Projects</router-link> |
+            <router-link to="/testimonials">Testimonials</router-link> |
+            <router-link to="/contact">Contact</router-link> 
+        </div>
     </nav>
 </template>
 <script>
@@ -15,15 +17,24 @@ export default {
 </script>
 <style scoped>
     nav {
-    padding: 30px;
-}
+        padding: 30px;
+        background-color: green;
+    }
 
-nav a {
-  font-weight: bold;
-  color: black;
-}
+    nav a {
+        font-weight: bold;
+        color:white;
+    }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+    nav a.router-link-exact-active {
+        color: #42b983;
+    }
+
+    
+    /* #home{}
+    #about{}
+    #projects{}
+    #education{}
+    #testimonials{}
+    #contact{} */
 </style>
