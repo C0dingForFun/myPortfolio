@@ -1,5 +1,13 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<template lang="">
+     <navbar-comp>
+        <router-view/>
+    </navbar-comp>
 </template>
+<script>
+export default {
+    
+}
+</script>
+<style lang="">
+    
+</style>
