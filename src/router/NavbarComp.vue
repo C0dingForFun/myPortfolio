@@ -1,6 +1,6 @@
 <template>   
-    <nav class="navbar navbar-expand-lg fixed-top shadow d-flex">
-        <div class="navbar-nav  justify-content-end">
+    <nav class="navbar navbar-expand-lg fixed-top shadow d-flex justify-content-end">
+        <div class="navbar-nav">
             <router-link to="/">Home</router-link> |
             <router-link to="/about">About</router-link> |
             <router-link to="/education">Education</router-link> |
@@ -30,11 +30,11 @@ export default {
         color: #42b983;
     }
 
-    
     /* #home{}
     #about{}
     #projects{}
     #education{}
     #testimonials{}
     #contact{} */
+
 </style>
