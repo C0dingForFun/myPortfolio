@@ -49,8 +49,8 @@ export default {
     }
     body{
         font-family:"Cascadia Mono";
-        background-color: #1D1D1D;
-        overflow-x: hidden;
+        background-color:#032221 ;
+        /* overflow-x: hidden; */
     }
     nav {
         /* padding: 30px; */
