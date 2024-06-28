@@ -2,9 +2,7 @@
         <navbar-comp>
             <router-view/>
         </navbar-comp>
-        <section class="overflow-x-hidden">
-            <home-comp/>
-        </section>
+        <home-comp/>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -17,7 +15,5 @@ export default {
 }
 </script>
 <style scoped>
-    section{
-        padding:100px 10%;
-    }
+    
 </style>
