@@ -2,6 +2,7 @@
     <navbar-comp>
         <router-view/>
     </navbar-comp>
+    
     <div>
         
     </div>
