@@ -7,7 +7,7 @@
         </section>
 </template>
 <script>
-import NavbarComp from '@/router/NavbarComp.vue';
+import NavbarComp from '@/components/NavbarComp.vue';
 import HomeComp from '@/components/HomeComp.vue';
 export default {
     components:{
