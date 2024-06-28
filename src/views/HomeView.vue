@@ -1,18 +1,25 @@
 <template>
-    <navbar-comp>
-        <router-view/>
-    </navbar-comp>
-    
-    <div>
-        
-    </div>
+    <section>
+        <navbar-comp>
+            <router-view/>
+        </navbar-comp>
+    </section>
+
+    <section class="mt-4">
+        <home-comp>
+            
+        </home-comp>
+
+    </section>
 
 </template>
 <script>
 import NavbarComp from '@/router/NavbarComp.vue';
+import HomeComp from '@/components/HomeComp.vue';
 export default {
     components:{
-        NavbarComp
+        NavbarComp,
+        HomeComp
     }
 }
 </script>
