@@ -5,7 +5,7 @@
         </navbar-comp>
     </section>
 
-    <section class="mt-4">
+    <section>
         <home-comp>
             
         </home-comp>

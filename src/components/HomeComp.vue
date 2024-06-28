@@ -1,5 +1,5 @@
 <template>
-    <div class="row justify-content-center">
+    <div class="row mt-5">
         <div class="col-lg-6 col-md-6 col-sm-12">
            <h2>wffuefiw</h2> 
         </div>
