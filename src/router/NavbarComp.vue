@@ -56,7 +56,7 @@ export default {
     }
     nav a:hover{
         color:green;
-        text-shadow:5px 5px black;
+        text-shadow:4px 4px black;
     }
 
     /* nav a.router-link-exact-active {
