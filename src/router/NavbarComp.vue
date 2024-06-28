@@ -43,19 +43,19 @@ export default {
 </script>
 <style scoped>
     nav {
-        background-color:rgb(0,0,0,0.1);
+        background-color:transparent;
     }
 
     nav a {
         padding: 10px;
         font-weight: bold;
         font-size:20px;
-        color:white;
+        color:green;
         text-decoration: none;
         transition: 1s;
     }
     nav a:hover{
-        color:white;
+        color:green;
         text-shadow:5px 5px black;
     }
 
