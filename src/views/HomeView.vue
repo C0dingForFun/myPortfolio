@@ -5,11 +5,8 @@
         </navbar-comp>
     </section>
 
-    <section>
-        <home-comp>
-            
-        </home-comp>
-
+    <section class="overflow-x-hidden">
+        <home-comp/>
     </section>
 
 </template>
