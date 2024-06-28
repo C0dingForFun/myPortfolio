@@ -42,19 +42,8 @@ export default {
 }
 </script>
 <style scoped>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-    }
-    body{
-        font-family:"Cascadia Mono";
-        background-color:#032221 ;
-        /* overflow-x: hidden; */
-    }
     nav {
-        /* padding: 30px; */
-        background-color: #032221;
+        background-color:rgb(0,0,0,0.1);
     }
 
     nav a {

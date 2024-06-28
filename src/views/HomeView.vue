@@ -1,14 +1,12 @@
 <template>
-    <section>
+    <div class="container-fluid">
         <navbar-comp>
             <router-view/>
         </navbar-comp>
-    </section>
-
-    <section class="overflow-x-hidden">
-        <home-comp/>
-    </section>
-
+        <section class="overflow-x-hidden">
+            <home-comp/>
+        </section>
+    </div>
 </template>
 <script>
 import NavbarComp from '@/router/NavbarComp.vue';
@@ -20,6 +18,8 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
+<style scoped>
+    .container-fluid{
+        background: teal;
+    }
 </style>
