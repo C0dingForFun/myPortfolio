@@ -44,7 +44,6 @@ export default {
 <style scoped>
     nav {
         background-color:transparent;
-        
     }
 
     nav a {
@@ -59,10 +58,6 @@ export default {
         color:white;
         text-shadow:4px 4px black;
     }
-
-    /* nav a.router-link-exact-active {
-        color: #42b983;
-    } */
 
     /* #home{}
     #about{}
