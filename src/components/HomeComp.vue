@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <h4>Hi there, I am ...</h4> 
-                <h1>Gwiba Mabandla</h1>
+                <h1><b>Gwiba Mabandla</b></h1>
                 <h4>I am a aspiring Fullstack Developer.</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
