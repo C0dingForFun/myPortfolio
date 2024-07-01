@@ -5,7 +5,7 @@
                 <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded"/>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
-                <h2></h2>
+                <h2>{{$store.state.aboutMe}}</h2>
             </div>
             
         </div>
@@ -13,7 +13,14 @@
 </template>
 <script>
 export default {
-    
+    computed:{
+        getAboutMe(){
+           return this.$store.dispatch('getAboutMe')
+        },
+    },
+    mounted(){
+        this.getAboutMe()
+    }
 }
 </script>
 <style scoped>
@@ -23,9 +30,9 @@ export default {
         background-color:#125a3e;
         color:aliceblue;
     }
-    #text img{
+    #pic img{
         width:48%;
-        /* height:auto; */
+        height:auto;
     }
     #text{
         min-height:100vh;
