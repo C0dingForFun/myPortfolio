@@ -35,6 +35,4 @@ export default {
         color:aliceblue;
         
     }
-
-
 </style>
