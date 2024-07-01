@@ -25,7 +25,7 @@ export default {
     }
     #text img{
         width:48%;
-        height:auto;
+        /* height:auto; */
     }
     #text{
         min-height:100vh;
