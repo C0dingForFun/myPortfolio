@@ -2,10 +2,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
-               <h2>MXM</h2> 
+                <h4>Hi there, I am ...</h4> 
+                <h1><b>Gwiba Mabandla</b></h1>
+                <h4>I am a aspiring Fullstack Developer.</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
-                <h2>Text</h2> 
+                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png"/>
             </div>
         </div>
     </div>
@@ -19,14 +21,20 @@ export default {
     #pic{
         min-height:100vh;
         max-height: auto;
-        background-color:#125a3e;
+        background-color:#ffc695;
         color:aliceblue;
+    }
+    #text img{
+        width:48%;
+        height:auto;
     }
     #text{
         min-height:100vh;
         max-height: auto;
-        background-color: #ffc695;
+        background-color: #125a3e;
         color:aliceblue;
         
     }
+
+
 </style>
