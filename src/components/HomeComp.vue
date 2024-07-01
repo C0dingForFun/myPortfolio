@@ -1,10 +1,10 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
                <h2>MXM</h2> 
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <h2>Text</h2> 
             </div>
         </div>
