@@ -5,7 +5,7 @@
                <h2>Text</h2> 
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
-                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/Landing.png"/>
+                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png"/>
             </div>
         </div>
     </div>
