@@ -2,7 +2,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
-               <h2>Text</h2> 
+                <h4>Hi there, I am ...</h4> 
+                <h1>Gwiba Mabandla</h1>
+                <h4>I am a aspiring Fullstack Developer.</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
                 <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png"/>
