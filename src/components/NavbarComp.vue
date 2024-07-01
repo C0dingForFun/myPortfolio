@@ -3,7 +3,7 @@
                 <div class="container-fluid">
                     <img src="https://c0dingforfun.github.io/portfolioimg/Images/Logo/Logo.png" alt="My Logo" loading="lazy">
                     <button class="navbar-toggler mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">                    
-                      <span class="text-white p-2" style="font-size:35px;">&#9776;</span>                      
+                      <span class="text-white p-2" style="font-size:30px;">&#9776;</span>                      
                     </button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                       <div class="offcanvas-header">
@@ -43,12 +43,12 @@ export default {
 </script>
 <style scoped>
     nav {
-        background-color:transparent;
+      background-color:transparent;
     }
 
     nav a {
         font-weight: bold;
-        font-size:16px;
+        font-size:15px;
         color:white;
         text-decoration: none;
         transition: 1s;
