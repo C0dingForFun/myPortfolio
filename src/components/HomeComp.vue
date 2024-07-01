@@ -7,7 +7,7 @@
                 <h4>I am a aspiring Fullstack Developer.</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
-                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png"/>
+                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded"/>
             </div>
         </div>
     </div>
@@ -27,6 +27,7 @@ export default {
     #text img{
         width:48%;
         height:auto;
+
     }
     #text{
         min-height:100vh;
