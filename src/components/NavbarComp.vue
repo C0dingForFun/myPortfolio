@@ -47,9 +47,8 @@ export default {
     }
 
     nav a {
-        padding: 10px;
         font-weight: bold;
-        font-size:20px;
+        font-size:16px;
         color:white;
         text-decoration: none;
         transition: 1s;

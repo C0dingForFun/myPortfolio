@@ -29,14 +29,4 @@ export default {
         color:aliceblue;
         
     }
-    #landing{
-        z-index:0;
-        position:absolute;
-        left:0;
-        right:0;
-        bottom:90px;
-        width:80vw;
-        height:200px;
-        background-color: rgb(0,0,0,0.5);
-    }
 </style>
