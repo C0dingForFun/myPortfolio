@@ -9,12 +9,14 @@
                     <h5>Discover</h5>
                     <h2><b>About Me</b></h2>
                     <p>{{myDescription.me}}</p> 
-                    <div class="row justify-content-between extra-info">
+                    <div class="row justify-content-between extra-info rounded">
                         <div class="col-6">
                             <p>Name: {{ myDescription.name }}</p>
+                            <p>Hobbies: {{ myDescription.hobbies }}</p>
                         </div>
                         <div class="col-6">
                             <p>Age: {{ myDescription.age }}</p>
+                            <p>Aspiring: {{ myDescription.aspiringToBe }}</p>
                         </div>
                     </div> 
                 </div>
@@ -65,6 +67,6 @@ export default {
     }
     .extra-info{
         width:400px;
-        border:solid 2px #125a3e
+        border:solid 2px #125a3e;
     }
 </style>
