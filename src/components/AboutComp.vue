@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <img src="https://c0dingforfun.github.io/portfolioimg/Images/Me/Me.png" class="rounded"/>
