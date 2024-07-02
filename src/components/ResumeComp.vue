@@ -1,11 +1,11 @@
 <template>
     <div class="container-fluid overflow-x-hidden" id="resume">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-12 align-content-center" id="green">
+            <div class="col-lg-3 col-md-3 col-sm-12 align-content-center">
                 
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 align-content-center" id="peach">
-                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded"/>
+            <div class="col-lg-3 col-md-3 col-sm-12 align-content-center">
+                
             </div>
         </div>
     </div>
@@ -28,27 +28,10 @@ export default {
 }
 </script>
 <style>
-    /* #resume{
+    #resume{
         min-height:100vh;
         max-height: auto;
-        /* background-color: #ffc695; 
+        background-color: #ffc695; 
         color:aliceblue;
-    } */
-    #green{
-        min-height:100vh;
-        max-height: auto;
-        background-color:#125a3e;
-        color:aliceblue;
-    }
-    /* #pic img{
-        width:48%;
-        height:auto;
-    } */
-    #peach{
-        min-height:100vh;
-        max-height: auto;
-        background-color: #ffc695;
-        color:aliceblue;
-        
     }
 </style>
