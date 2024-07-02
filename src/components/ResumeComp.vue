@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid align-content-center justify-content-center" id="resume">
         <div div="row align-content-center" id="row">
-            <h2>...</h2>
+            <h2>Resume</h2>
         </div>
     </div>
 </template>
@@ -21,5 +21,8 @@ export default {
         width:95vw;
         height:95vh;
         background-color:#125a3e;
+    }
+    h2{
+        color:aliceblue;
     }
 </style>
