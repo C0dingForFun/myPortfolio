@@ -64,7 +64,7 @@ export default {
         color:#125a3e; 
     }
     .extra-info{
-        width:400px;
-        border:solid 2px #125a3e;
+        width:410px;
+        border:solid 5px #125a3e;
     }
 </style>

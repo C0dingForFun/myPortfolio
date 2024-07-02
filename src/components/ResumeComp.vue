@@ -1,15 +1,16 @@
 <template>
-    <div class="container-fluid overflow-x-hidden align-content-center" id="resume">
+    <div class="container-fluid overflow-hidden align-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
         <div class="row mt-3">
+            <h2 class=" text-white mb-5" data-aos="fade-up">Resume</h2>
             <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <div class="education">
                     <div class="row">
                         <div class="col-1 timeline">
-                            <img src="" alt="">
+                            <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div>hdh</div>
+                            <div>hi</div>
                             <div>hdh</div>
                             <div>hdh</div>
                         </div>
@@ -19,8 +20,8 @@
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <div class="experience">
                     <div class="row">
-                        <div class="col-1">
-                            |
+                        <div class="col-1 timeline">
+                            <img :src="resume.workTimeline">
                         </div>
                         <div class="col-11">
                             <div>hdh</div>
@@ -36,19 +37,19 @@
 </template>
 <script>
 export default {
-    // methods:{
-    //     displayAboutMe(){
-    //         return this.$store.state.aboutMe
-    //     }
-    // },
-    // computed:{
-    //     getData(){
-    //        return this.$store.dispatch('getData')
-    //     }
-    // },
-    // mounted(){
-    //     this.getData
-    // }
+    methods:{
+        displayEducation(){
+            return this.$store.state.education
+        }
+    },
+    computed:{
+        getData(){
+           return this.$store.dispatch('getData')
+        }
+    },
+    mounted(){
+        this.getData
+    }
 }
 </script>
 <style>
@@ -72,7 +73,7 @@ export default {
         margin-left:5px;
     }
     .timeline img{
-        width:auto;
-        height:100%;
+        width:100px;
+        height:510px;
     }
 </style>
