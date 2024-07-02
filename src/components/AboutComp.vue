@@ -4,9 +4,9 @@
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded"/>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text" v-for="myDescription in displayAboutMe()" :key="myDescription">
-                <h2>{{myDescription.me}}</h2>
-
+            <div  v-for="myDescription in displayAboutMe()" :key="myDescription" class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
+                <h2>Something</h2>
+                <h3>{{ myDescription.me }}</h3>
             </div>
             
         </div>
@@ -20,7 +20,7 @@ export default {
         }
     },
     computed:{
-        getAboutMe(){
+        getData(){
            return this.$store.dispatch('getData')
         }
     },
