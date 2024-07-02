@@ -1,10 +1,10 @@
 <template>
-    <div class="container-fluid" id="about">
+    <div class="container-fluid" id="about" v-for="myDescription in displayAboutMe()" :key="myDescription">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
-                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Me/Me.png" class="rounded"/>
+                <img :src='myDescription.image' class="rounded"/>
             </div>
-            <div v-for="myDescription in displayAboutMe()" :key="myDescription" class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
                 <div class="text-start mx-auto" style="width:300px;">
                     <h5>Discover</h5>
                     <h2><b>About Me</b></h2>
