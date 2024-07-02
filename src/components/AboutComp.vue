@@ -5,7 +5,7 @@
                 <img :src='myDescription.image' class="rounded"/>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
-                <div class="text-start mx-auto" style="width:300px;">
+                <div class="text-start mx-auto" style="width:420px;">
                     <h5>Discover</h5>
                     <h2><b>About Me</b></h2>
                     <p>{{myDescription.me}}</p> 
@@ -65,6 +65,7 @@ export default {
     }
     .extra-info{
         width:410px;
-        border:solid 4px #125a3e;
+        background-color:#125a3e;
+        box-shadow:10px 10px 10px rgb(0,0,0,0.5); 
     }
 </style>
