@@ -72,11 +72,5 @@ export default {
       height:60px;
     }
 
-    #home{}
-    #about{}
-    #projects{}
-    #education{}
-    #testimonials{}
-    #contact{}
 
 </style>
