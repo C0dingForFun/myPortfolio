@@ -65,6 +65,6 @@ export default {
     }
     .extra-info{
         width:410px;
-        border:solid 5px #125a3e;
+        border:solid 4px #125a3e;
     }
 </style>
