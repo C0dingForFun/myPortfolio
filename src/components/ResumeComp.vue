@@ -1,15 +1,12 @@
 <template>
-    <div class="container-fluid" id="resume">
-        <div div="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="green">
-               <h2>hi</h2> 
+    <div class="container-fluid overflow-x-hidden" id="resume">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 align-content-center" id="green">
+                
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="peach">
-               <h2>hello</h2> 
+            <div class="col-lg-3 col-md-3 col-sm-12 align-content-center" id="peach">
+                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded"/>
             </div>
-            <!-- <div class="col-lg-3 col-md-3 col-sm-12 align-content-center" id="green">hola</div>
-            <div class="col-lg-3 col-md-3 col-sm-12 align-content-center" id="peach">molo</div> -->
-            <!-- <h2>Resume</h2> -->
         </div>
     </div>
 </template>
@@ -41,13 +38,17 @@ export default {
         min-height:100vh;
         max-height: auto;
         background-color:#125a3e;
+        color:aliceblue;
     }
+    /* #pic img{
+        width:48%;
+        height:auto;
+    } */
     #peach{
         min-height:100vh;
         max-height: auto;
-        background-color:#ffc695;
-    }
-    h2{
+        background-color: #ffc695;
         color:aliceblue;
+        
     }
 </style>
