@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid align-content-center justify-content-center" id="resume">
-        <div div="row " id="row">
+        <div div="row align-content-center" id="row">
             <h2>...</h2>
         </div>
     </div>
