@@ -16,7 +16,7 @@ export default {
     computed:{
         getAboutMe(){
            return this.$store.dispatch('getData')
-        },
+        }
     },
     mounted(){
         this.getData()
