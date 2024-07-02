@@ -4,9 +4,9 @@
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded"/>
             </div>
-            <div  v-for="myDescription in displayAboutMe()" :key="myDescription" class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
                 <h2>Something</h2>
-                <h3>{{ myDescription.me }}</h3>
+                <h3>{{$store.state.aboutMe}}</h3>
             </div>
             
         </div>
@@ -14,18 +14,18 @@
 </template>
 <script>
 export default {
-    methods:{
-        displayAboutMe(){
-            return this.$store.state.aboutMe
-        }
-    },
+    // methods:{
+    //     displayAboutMe(){
+    //         return this.$store.state.aboutMe
+    //     }
+    // },
     computed:{
         getData(){
            return this.$store.dispatch('getData')
         }
     },
     mounted(){
-        this.getData()
+        this.getData
     }
 }
 </script>
