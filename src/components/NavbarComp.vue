@@ -1,5 +1,5 @@
 <template>   
-    <nav id="nav" class="navbar navbar-expand-lg fixed-top shadow">
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
                 <div class="container-fluid">
                     <img src="https://c0dingforfun.github.io/portfolioimg/Images/Logo/Logo.png" alt="My Logo" loading="lazy">
                     <button class="navbar-toggler mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">                    
@@ -40,11 +40,12 @@
 // let	nav = document.querySelector('nav');
 		
 // 		window.addEventListener('scroll', function(){
-// 			if (window.pageYOffset > 100){
-// 				nav.classList.add('bg-dark','shadow' );
+// 			if (window.screenY > 100){
+//         nav.setAttribute('class','bg-dark');
+
 // 			}
 // 			else {
-// 				nav.classList.remove('bg-dark', 'shadow');	
+// 				nav.removeAttribute('class','bg-dark');	
 // 			}
 // });
 export default {
