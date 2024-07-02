@@ -4,7 +4,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <h4>Hi there, I am ...</h4> 
                 <h1><b>Gwiba Mabandla</b></h1>
-                <h4>I am a aspiring Fullstack Developer.</h4>
+                <h4>I am an aspiring Fullstack Developer.</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
                 <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png"/>

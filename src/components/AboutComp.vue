@@ -4,7 +4,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded"/>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
                 <h2>{{$store.state.aboutMe}}</h2>
             </div>
             
@@ -15,11 +15,11 @@
 export default {
     computed:{
         getAboutMe(){
-           return this.$store.dispatch('getAboutMe')
+           return this.$store.dispatch('getData')
         },
     },
     mounted(){
-        this.getAboutMe()
+        this.getData()
     }
 }
 </script>

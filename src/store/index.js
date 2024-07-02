@@ -10,7 +10,6 @@ export default createStore({
     testimonials:null,
   },
   getters: {
-    
   },
   mutations: {
     setAboutMe(state, payload){
@@ -34,7 +33,7 @@ export default createStore({
     
   },
   actions: {
-    async getAboutMe({commit}){
+    async getData({commit}){
       let fetchedinfo = await fetch('https://c0dingforfun.github.io/firstAPI/data/data.json')
       let data = await fetchedinfo.json()
       let {aboutMe,projects,education,skills,workExp,testimonials} = data
@@ -47,6 +46,5 @@ export default createStore({
     }
   },
   modules: {
-    // separates information -> you can more than one module to save different information
   }
 })
