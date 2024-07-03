@@ -28,7 +28,7 @@ export default {
     #text img{
         width:48%;
         height:auto;
-
+        box-shadow:8px 8px 8px rgb(0,0,0,0.5);
     }
     #text{
         min-height:100vh;
