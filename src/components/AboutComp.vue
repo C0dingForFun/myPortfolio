@@ -2,14 +2,14 @@
     <div class="container-fluid" id="about" v-for="myDescription in displayAboutMe()" :key="myDescription">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
-                <img :src='myDescription.image' class="rounded"/>
+                <img :src='myDescription.image' class="rounded" data-aos="fade-left"/>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
                 <div class="text-start mx-auto" style="width:420px;">
-                    <h5>Discover</h5>
-                    <h2><b>About Me</b></h2>
-                    <p>{{myDescription.me}}</p> 
-                    <div class="row justify-content-between extra-info rounded">
+                    <h5 data-aos="fade-left">Discover</h5>
+                    <h2 data-aos="fade-left" data-aos-delay="100"><b>About Me</b></h2>
+                    <p data-aos="fade-left" data-aos-delay="200">{{myDescription.me}}</p> 
+                    <div class="row justify-content-between extra-info rounded" data-aos="fade-left" data-aos-delay="400">
                         <div class="col-6">
                             <p>Name: {{ myDescription.name }}</p>
                             <p>Hobbies: {{ myDescription.hobbies }}</p>
@@ -82,4 +82,4 @@ export default {
         box-shadow: 8px 8px 8px rgb(0,0,0,0.5);
         background-color: black;
     }
-    </style>
+</style>
