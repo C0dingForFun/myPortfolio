@@ -55,8 +55,6 @@
                           </div>
                         </div>
                     </div>
-
-                <!-- </section> -->
                 </template> 
             </skills-comp>
 </template>
