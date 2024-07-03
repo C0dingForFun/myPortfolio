@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="text-center footer">
-            <div>
+            <div class="pt-2">
                 <h2>LET'S GET IN TOUCH</h2>
             </div>
             <div>
