@@ -10,9 +10,15 @@
                             <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div>hi</div>
-                            <div>hdh</div>
-                            <div>hdh</div>
+                            <div class="mt-1">
+                                hi
+                            </div>
+                            <div class="mt-3">
+                                hello
+                            </div>
+                            <div class="mt-3">
+                                bye
+                            </div>
                         </div>
                     </div>
                 </div>
