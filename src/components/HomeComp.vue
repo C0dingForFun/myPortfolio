@@ -36,5 +36,6 @@ export default {
         background-color: #125a3e;
         color:aliceblue;
         box-shadow:8px 8px 8px rgb(0,0,0,0.5);
+        z-index:1;
     }
 </style>
