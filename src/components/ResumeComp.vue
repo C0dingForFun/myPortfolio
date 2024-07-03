@@ -1,55 +1,37 @@
 <template>
-    <div class="container-fluid overflow-hidden align-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
-        <div class="row mt-3" v-for="work in displayWork()" :key="work">
+    <div class="container-fluid overflow-hidden align-content-center resume" id="resume" v-for="resume in displayEducation()" :key="resume">
+        <div class="row mt-3">
             <h2 class=" text-white mb-5" data-aos="fade-up">Resume</h2>
+            <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <div class="education mt-2">
+                <div class="education">
                     <div class="row">
                         <div class="col-1 timeline">
                             <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div class="spine_road mt-2">
-                                <img :src="resume.placeOfInstitution[0].image"/>
-                                <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
-                                <p>{{ resume.placeOfInstitution[0].year}}</p>
-                                <p>{{ resume.placeOfInstitution[0].techBackground}}</p>
-                            </div>
-                            <div class="college">
-                                <img :src="resume.placeOfInstitution[1].image"/>
-                                <p>{{ resume.placeOfInstitution[1].nameOfInstitution}}</p>
-                                <p>{{ resume.placeOfInstitution[1].year}}</p>
-                                <p>{{ resume.placeOfInstitution[1].course}}</p>
-                            </div>
-                            <div class="lca">
-                                <img :src="resume.placeOfInstitution[2].image"/>
-                                <p>{{ resume.placeOfInstitution[2].nameOfInstitution}}</p>
-                                <p>{{ resume.placeOfInstitution[2].year}}</p>
-                                <p>{{ resume.placeOfInstitution[2].course}}</p>
-                            </div>
+                            <div>hi</div>
+                            <div>hdh</div>
+                            <div>hdh</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <div class="experience mt-2">
+                <div class="experience">
                     <div class="row">
                         <div class="col-1 timeline">
                             <img :src="resume.workTimeline">
                         </div>
-                        <div class="col-11 work mt-2">
-                            <img :src="work.image"/>
-                            <p>{{ work.placeOfWork }}</p>
-                            <p>{{ work.year}}</p>
-                            <h4><b>Contact:</b></h4>
-                            <p>{{work.contact[0].name}}</p>
-                            <p>{{work.contact[0].position}}</p>        
-                            <p>{{work.contact[0].cell}}</p>
-                            <p>{{work.contact[0].email}}</p>
+                        <div class="col-11">
+                            <div>hdh</div>
+                            <div>hdh</div>
+                            <div>hdh</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-1 col-md-1"></div>
         </div>
     </div>
 </template>
@@ -58,9 +40,6 @@ export default {
     methods:{
         displayEducation(){
             return this.$store.state.education
-        },
-        displayWork(){
-            return this.$store.state.workExp
         }
     },
     computed:{
@@ -74,53 +53,27 @@ export default {
 }
 </script>
 <style>
-    #resume{
+    .resume{
         min-height:100vh;
         max-height: auto;
         background-color: #ffc695; 
         color:aliceblue;
     }
-    .container-fluid {
-        display: flex;
-        justify-content: center;
-    }
     .education{
         width:500px;
-        height:502px;
+        height:500px;
         background-color: #125a3e;
         color:aliceblue;
-        margin-left: 15vw;
     }
     .experience{
         width:500px;
-        height:502px;
+        height:500px;
         background-color: #125a3e;
         color:aliceblue;
-        margin-left: 10vw;
+        margin-left:5px;
     }
     .timeline img{
         width:100px;
         height:510px;
     }
-    .spine_road img{
-        width:50px;
-        height:50px;
-        border-radius:50%;
-    }
-    .college img{
-        width:50px;
-        height:50px;
-        border-radius:50%;
-    }
-    .lca img{
-        width:50px;
-        height:50px;
-        border-radius:50%;
-    }
-    .work img{
-        width:50px;
-        height:50px;
-        border-radius:50%;
-    }
-
 </style>

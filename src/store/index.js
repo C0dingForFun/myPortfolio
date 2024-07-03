@@ -34,16 +34,20 @@ export default createStore({
   },
   actions: {
     async getData({commit}){
-      let fetchedInfo = await fetch('https://c0dingforfun.github.io/firstAPI/data/data.json')
-      let myData = await fetchedInfo.json()
-      let {aboutMe,projects,education,skills,workExp,testimonials} = myData
-      console.log(myData);
-      commit('setAboutMe', aboutMe)  
-      commit('setEducation', education)  
-      commit('setWorkExp', workExp)  
-      commit('setSkills', skills)  
-      commit('setProjects', projects)  
-      commit('setTestimonials', testimonials)  
+      try {
+        let fetchedInfo = await fetch('https://c0dingforfun.github.io/firstAPI/data/data.json')
+        let myData = await fetchedInfo.json()
+        let {aboutMe,projects,education,skills,workExp,testimonials} = myData
+        commit('setAboutMe', aboutMe)  
+        commit('setEducation', education)  
+        commit('setWorkExp', workExp)  
+        commit('setSkills', skills)  
+        commit('setProjects', projects)  
+        commit('setTestimonials', testimonials) 
+      } 
+      catch (error) {
+        console.log(error);
+      }
     }
   },
   modules: {
