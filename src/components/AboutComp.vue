@@ -18,7 +18,7 @@
                             <p>Age: {{ myDescription.age }}</p>
                             <p>Aspiring: {{ myDescription.aspiringToBe }}</p>
                         </div>
-                        <button class="mx-auto mb-1">Download CV</button>
+                        <a href="file.doc" class="mx-auto mb-1 align-content-center text-center" download>Download CV</a>
                     </div> 
                 </div>
             </div>
@@ -69,11 +69,17 @@ export default {
         background-color:#125a3e;
         box-shadow:10px 10px 10px rgb(0,0,0,0.5); 
     }
-    button{
+    a{
         width:200px;
         height:40px;
         background-color: #ffc695;
         color:aliceblue;
+        transition: 1s;
+        text-decoration: none;
     }
-
-</style>
+    a:hover{
+        transform: scale(1.05);
+        box-shadow: 8px 8px 8px rgb(0,0,0,0.5);
+        background-color: black;
+    }
+    </style>
