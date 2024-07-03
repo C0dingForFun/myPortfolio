@@ -58,7 +58,7 @@ export default {
 
     nav a {
         font-weight: bold;
-        font-size:15px;
+        font-size:20px;
         color:white;
         text-decoration: none;
         transition: 1s;
@@ -72,11 +72,5 @@ export default {
       height:60px;
     }
 
-    /* #home{}
-    #about{}
-    #projects{}
-    #education{}
-    #testimonials{}
-    #contact{} */
 
 </style>
