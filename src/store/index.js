@@ -44,7 +44,8 @@ export default createStore({
       commit('setSkills', skills)  
       commit('setProjects', projects)  
       commit('setTestimonials', testimonials) 
-      } catch (error) {
+      } 
+      catch (error) {
         console.log(error);
       }
     }
