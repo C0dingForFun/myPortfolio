@@ -74,7 +74,6 @@ export default {
 }
 </script>
 <style>
-
     #resume{
         min-height:100vh;
         max-height: auto;
