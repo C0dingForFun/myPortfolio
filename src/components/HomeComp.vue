@@ -35,6 +35,6 @@ export default {
         max-height: auto;
         background-color: #125a3e;
         color:aliceblue;
-        border-bottom:solid 2px #ffc695;
+        box-shadow: 8px 8px 8px rgb(0,0,0,0.5);
     }
 </style>
