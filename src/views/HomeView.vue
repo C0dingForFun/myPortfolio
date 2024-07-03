@@ -57,6 +57,7 @@
                     </div>
                 </template> 
             </skills-comp>
+            <footer-comp/>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -64,13 +65,15 @@ import HomeComp from '@/components/HomeComp.vue';
 import AboutComp from '@/components/AboutComp.vue';
 import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
+import FooterComp from '@/components/FooterComp.vue';
 export default {
     components:{
         NavbarComp,
         HomeComp,
         AboutComp,
         ResumeComp,
-        SkillsComp
+        SkillsComp,  
+        FooterComp    
     }
 }
 </script>
