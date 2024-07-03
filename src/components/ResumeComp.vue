@@ -1,9 +1,9 @@
 <template>
-    <div class="container-fluid overflow-hidden align-content-center justify-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
+    <div class="container-fluid overflow-hidden align-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
         <div class="row mt-3" v-for="work in displayWork()" :key="work">
             <h2 class=" text-white mb-5" data-aos="fade-up">Resume</h2>
             <div class="col-lg-6 col-md-5 col-sm-12">
-                <div class="education mt-2">
+                <div class="education mt-2 align-content-end">
                     <div class="row">
                         <div class="col-1 timeline">
                             <img :src="resume.eduTimeline">
@@ -37,17 +37,15 @@
                         <div class="col-1 timeline">
                             <img :src="resume.workTimeline">
                         </div>
-                        <div class="col-11 work">
+                        <div class="col-11 work mt-2">
                             <img :src="work.image"/>
                             <p>{{ work.placeOfWork }}</p>
                             <p>{{ work.year}}</p>
                             <h4><b>Contact:</b></h4>
-                                
-                                <p>{{ work.contact[0].name}}</p>
-                                <p>{{ work.contact[0].cell}}</p>
-                                <p>{{ work.contact[0].email}}</p>
-                                <!-- <p>{{ work.contact[0].cell}}</p> -->
-                                    
+                            <p>{{work.contact[0].name}}</p>
+                            <p>{{work.contact[0].position}}</p>        
+                            <p>{{work.contact[0].cell}}</p>
+                            <p>{{work.contact[0].email}}</p>
                         </div>
                     </div>
                 </div>
@@ -93,23 +91,10 @@ export default {
         height:502px;
         background-color: #125a3e;
         color:aliceblue;
-        margin-left:5px;
     }
     .timeline img{
         width:100px;
         height:510px;
-    }
-    .spine_road{
-        position: relative;
-        /* top:8vh; */
-    }
-    .college{
-        position: relative;
-        /* top:18vh; */
-    }
-    .lca{
-        position: relative;
-        /* top:30vh; */
     }
     .spine_road img{
         width:50px;
