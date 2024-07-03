@@ -9,7 +9,7 @@
                             <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div class="spine_road">
+                            <div class="spine_road mt-2">
                                 <img :src="resume.placeOfInstitution[0].image"/>
                                 <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[0].year}}</p>
@@ -38,16 +38,20 @@
                             <img :src="resume.workTimeline">
                         </div>
                         <div class="col-11 work">
-                            <img :src="resume.placeOfInstitution[0].image"/>
-                                <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
-                                <p>{{ resume.placeOfInstitution[0].year}}</p>
-                                <p>{{ resume.placeOfInstitution[0].techBackground}}</p>
-                            
+                            <img :src="work.image"/>
+                            <p>{{ work.placeOfWork }}</p>
+                            <p>{{ work.year}}</p>
+                            <h4><b>Contact:</b></h4>
+                                
+                                <p>{{ work.contact[0].name}}</p>
+                                <p>{{ work.contact[0].cell}}</p>
+                                <p>{{ work.contact[0].email}}</p>
+                                <!-- <p>{{ work.contact[0].cell}}</p> -->
+                                    
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-1 col-md-1"></div>
         </div>
     </div>
 </template>
@@ -58,7 +62,7 @@ export default {
             return this.$store.state.education
         },
         displayWork(){
-            return this.$store.state.education
+            return this.$store.state.workExp
         }
     },
     computed:{
