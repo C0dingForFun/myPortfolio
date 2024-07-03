@@ -1,5 +1,5 @@
 <template>   
-    <nav id="nav" class="navbar navbar-expand-lg fixed-top shadow">
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
                 <div class="container-fluid">
                     <img src="https://c0dingforfun.github.io/portfolioimg/Images/Logo/Logo.png" alt="My Logo" loading="lazy">
                     <button class="navbar-toggler mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">                    
@@ -37,8 +37,18 @@
               </nav>       
 </template>
 <script>
+// let	nav = document.querySelector('nav');
+		
+// 		window.addEventListener('scroll', function(){
+// 			if (window.screenY > 100){
+//         nav.setAttribute('class','bg-dark');
+
+// 			}
+// 			else {
+// 				nav.removeAttribute('class','bg-dark');	
+// 			}
+// });
 export default {
-    
 }
 </script>
 <style scoped>
@@ -48,7 +58,7 @@ export default {
 
     nav a {
         font-weight: bold;
-        font-size:15px;
+        font-size:20px;
         color:white;
         text-decoration: none;
         transition: 1s;
@@ -62,11 +72,5 @@ export default {
       height:60px;
     }
 
-    /* #home{}
-    #about{}
-    #projects{}
-    #education{}
-    #testimonials{}
-    #contact{} */
 
 </style>

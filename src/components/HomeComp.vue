@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <h4>Hi there, I am ...</h4> 
@@ -11,6 +11,7 @@
             </div>
         </div>
     </div>
+   
 </template>
 <script>
 export default {
