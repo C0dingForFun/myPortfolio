@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid overflow-hidden align-content-center justify-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
-        <div class="row mt-3">
+        <div class="row mt-3" v-for="work in displayWork()" :key="work">
             <h2 class=" text-white mb-5" data-aos="fade-up">Resume</h2>
             <div class="col-lg-6 col-md-5 col-sm-12">
                 <div class="education mt-2">
@@ -38,9 +38,8 @@
                             <img :src="resume.workTimeline">
                         </div>
                         <div class="col-11">
-                            <div>hdh</div>
-                            <div>hdh</div>
-                            <div>hdh</div>
+                            <div></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -53,6 +52,9 @@
 export default {
     methods:{
         displayEducation(){
+            return this.$store.state.education
+        },
+        displayWork(){
             return this.$store.state.education
         }
     },

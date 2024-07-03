@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid" id="about" v-for="myDescription in displayAboutMe()" :key="myDescription">
-        <div class="row">
+        <div class="row border">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <img :src='myDescription.image' class="rounded" data-aos="fade-left"/>
             </div>
@@ -49,6 +49,8 @@ export default {
         max-height: auto;
         background-color:#125a3e;
         color:aliceblue;
+        box-shadow: 8px 0px 8px rgb(0,0,0,0.5);
+        z-index:1;
     }
     #pic img{
         width:48%;
