@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid overflow-hidden align-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
+    <div class="container-fluid overflow-hidden align-content-center resume" id="resume" v-for="resume in displayEducation()" :key="resume">
         <div class="row mt-3">
             <h2 class=" text-white mb-5" data-aos="fade-up">Resume</h2>
             <div class="col-lg-1 col-md-1"></div>
@@ -10,15 +10,9 @@
                             <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div class="mt-1">
-                                hi
-                            </div>
-                            <div class="mt-3">
-                                hello
-                            </div>
-                            <div class="mt-3">
-                                bye
-                            </div>
+                            <div>hi</div>
+                            <div>hdh</div>
+                            <div>hdh</div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +53,7 @@ export default {
 }
 </script>
 <style>
-    #resume{
+    .resume{
         min-height:100vh;
         max-height: auto;
         background-color: #ffc695; 
