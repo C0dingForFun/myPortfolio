@@ -37,8 +37,11 @@
                         <div class="col-1 timeline">
                             <img :src="resume.workTimeline">
                         </div>
-                        <div class="col-11">
-                            <div></div>
+                        <div class="col-11 work">
+                            <img :src="resume.placeOfInstitution[0].image"/>
+                                <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
+                                <p>{{ resume.placeOfInstitution[0].year}}</p>
+                                <p>{{ resume.placeOfInstitution[0].techBackground}}</p>
                             
                         </div>
                     </div>
@@ -115,6 +118,11 @@ export default {
         border-radius:50%;
     }
     .lca img{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+    }
+    .work img{
         width:50px;
         height:50px;
         border-radius:50%;
