@@ -53,6 +53,7 @@ export default {
     #pic img{
         width:48%;
         height:auto;
+        box-shadow: 8px 8px 8px rgb(0,0,0,0.5);
     }
     #text{
         min-height:100vh;
@@ -71,7 +72,7 @@ export default {
     }
     a{
         width:200px;
-        height:40px;
+        height:35px;
         background-color: #ffc695;
         color:aliceblue;
         transition: 1s;
