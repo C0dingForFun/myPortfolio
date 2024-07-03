@@ -2,8 +2,8 @@
     <div class="container-fluid overflow-hidden align-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
         <div class="row mt-3" v-for="work in displayWork()" :key="work">
             <h2 class=" text-white mb-5" data-aos="fade-up">Resume</h2>
-            <div class="col-lg-6 col-md-5 col-sm-12">
-                <div class="education mt-2 align-content-end">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="education mt-2">
                     <div class="row">
                         <div class="col-1 timeline">
                             <img :src="resume.eduTimeline">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-5 col-sm-12">
+            <div class="col-lg-5 col-md-5 col-sm-12">
                 <div class="experience mt-2">
                     <div class="row">
                         <div class="col-1 timeline">
@@ -80,17 +80,23 @@ export default {
         background-color: #ffc695; 
         color:aliceblue;
     }
+    .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
     .education{
         width:500px;
         height:502px;
         background-color: #125a3e;
         color:aliceblue;
+        margin-left: 15vw;
     }
     .experience{
         width:500px;
         height:502px;
         background-color: #125a3e;
         color:aliceblue;
+        margin-left: 10vw;
     }
     .timeline img{
         width:100px;
