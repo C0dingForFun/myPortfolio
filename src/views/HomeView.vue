@@ -118,8 +118,9 @@
                     </div>
                 </template> 
             </skills-comp>
-            <projects-comp>
-                <template #projects>
+            <div>
+             <projects-comp>
+                <template #projects v-if="projects">
                     <div class="row justify-content-between" id="projects">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
@@ -134,7 +135,10 @@
                         </div>
                     </div>
                 </template>
-            </projects-comp>
+            </projects-comp>   
+        </div>
+        <div v-else class="spinner">Loading Projects...</div>
+            
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
