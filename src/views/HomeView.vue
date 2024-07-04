@@ -9,8 +9,34 @@
                 <template #skills >
                     <div id="skills" v-for="skill in displaySkills()" :key="skill">
                         <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
-                        <div>
-                            
+                        <div class="row">
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+                                
+                            </div>
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+                                
+                            </div>
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+                                
+                            </div>
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+
+                            </div>
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+                                
+                            </div>
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+
+                            </div>
+                            <div class="col-lg-4 col-col-md-4 col-sm-12">
+                                
+                            </div>
+                            <div class="col-lg-4 col-col-md-4 col-sm-12"></div>
                         </div>
                     </div>
                 </template> 
