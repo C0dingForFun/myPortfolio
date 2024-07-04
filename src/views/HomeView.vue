@@ -121,16 +121,18 @@
             <!-- <section v-if="projects?.length"> -->
             <projects-comp>
                 <template #projects >
-                    <div class="row gap-2 projects" id="projects">
-                        <h2>Projects</h2>
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
-                                <img :src="project.image" class="card-img-top" loading="lazy">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ project.name }}</h5>
-                                    <p class="card-text">{{ project.description }}</p>
-                                    <a :href="project.github" target="blank" class="btn btn-primary">Github</a>
-                                    <a :href="project.vercel" target="blank" class="btn btn-primary">Live</a>
+                    <div class="container-fluid">
+                        <div class="row gap-2 projects" id="projects">
+                            <h2>Projects</h2>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
+                                    <img :src="project.image" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ project.name }}</h5>
+                                        <p class="card-text">{{ project.description }}</p>
+                                        <a :href="project.github" target="blank" class="btn btn-primary">Github</a>
+                                        <a :href="project.vercel" target="blank" class="btn btn-primary">Live</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,8 +211,8 @@ export default {
         background-color: #125a3e;
         /* width:100vw; */
     }
-    .card{
+    .products{
         display:grid;
-
+        grid-template-columns: minmax(auto-fill, repeat(400px 1fr));
     }
 </style>
