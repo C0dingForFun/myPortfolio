@@ -118,19 +118,23 @@
                     </div>
                 </template> 
             </skills-comp>
-            <!-- <projects-comp>
+            <projects-comp>
                 <template #projects>
-                    <div class="card" style="width: 18rem;" v-for="project in displayProjects()" :key="project" id="projects">
-                        <img :src="project.image" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ project.name }}</h5>
-                            <p class="card-text">{{ project.description }}</p>
-                            <a :href="projects.github" class="btn btn-primary">Github</a>
-                            <a :href="projects.vercel" class="btn btn-primary">Live</a>
+                    <div class="row justify-content-between" id="projects">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
+                                <img :src="project.image" class="card-img-top" loading="lazy">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ project.name }}</h5>
+                                    <p class="card-text">{{ project.description }}</p>
+                                    <a :href="project.github" target="blank" class="btn btn-primary">Github</a>
+                                    <a :href="project.vercel" target="blank" class="btn btn-primary">Live</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </template>
-            </projects-comp> -->
+            </projects-comp>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -138,7 +142,7 @@ import HomeComp from '@/components/HomeComp.vue';
 import AboutComp from '@/components/AboutComp.vue';
 import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
-// import ProjectsComp from '@/components/ProjectsComp.vue';
+import ProjectsComp from '@/components/ProjectsComp.vue';
 export default {
     components:{
         NavbarComp,
@@ -146,7 +150,7 @@ export default {
         AboutComp,
         ResumeComp,
         SkillsComp,
-        // ProjectsComp
+        ProjectsComp
     },
     methods:{
         displaySkills(){
@@ -193,5 +197,11 @@ export default {
     }
     .skills i{
         font-size:5vw;
+    }
+    #product{
+        width:100vw;
+        min-height:100vh;
+        max-height:auto;
+        background-color: #125a3e;
     }
 </style>
