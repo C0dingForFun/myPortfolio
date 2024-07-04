@@ -7,7 +7,7 @@
                 <h4 data-aos="fade-up" data-aos-delay="1000">I am an aspiring Software Developer.</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
-                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded" />
+                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded" data-aos="fade-up" />
             </div>
         </div>
     </div>
