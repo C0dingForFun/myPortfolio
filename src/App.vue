@@ -1,7 +1,6 @@
 <template>
   <NavBarComp/>
-  <section v-if="!$store.state.projects" class="spinner-border" role="status">Loading Projects...</section>
-    <router-view/>
+  <router-view/>
   <NavBarComp/>
 </template>
 
@@ -9,12 +8,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 body{
   overflow-x:hidden;
+  width:100vw;
 }
 #app {
   font-family: "Comic Neue", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  overflow-x:hidden;
 }
 </style>
 <script>

@@ -118,8 +118,8 @@
                     </div>
                 </template> 
             </skills-comp>
-            
             <projects-comp>
+                <section v-if="!$store.state.projects" class="spinner-border" role="status">Loading Projects...</section>
                 <template #projects >
                     <div class="container-fluid" id="projects">
                         <div class="row gap-2 projects" >
@@ -204,10 +204,14 @@ export default {
     .skills i{
         font-size:5vw;
     }
-    .card{
+    #projects{
         display:grid;
-        grid-template-columns: minmax(auto-fill, repeat(300px 1fr));
+        grid-template-columns: minmax(auto-fill, repeat(300px, 1fr));
+        margin:auto;
         background-color: #125a3e;
         color:aliceblue;
+    }
+    .card{
+        background-color: #ffc695;
     }
 </style>
