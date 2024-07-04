@@ -1,5 +1,5 @@
 <template >
-    <div class="container-fluid">
+    <div class="container-fluid" id="contact">
         <div class="row">
              
         </div>
@@ -11,5 +11,9 @@ export default {
 }
 </script>
 <style scoped>
-    
+    #contact{
+        width:100vw;
+        min-height:100vh;
+        max-height:auto;
+    }
 </style>

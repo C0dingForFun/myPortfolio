@@ -141,7 +141,7 @@
             </projects-comp>   
         <!-- </section> -->
         <!-- <section v-else class="spinner-border" role="status">Loading Projects...</section> -->
-            
+            <contact-comp/>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -150,6 +150,7 @@ import AboutComp from '@/components/AboutComp.vue';
 import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
+import ContactComp from '@/components/ContactComp.vue';
 export default {
     components:{
         NavbarComp,
@@ -157,7 +158,8 @@ export default {
         AboutComp,
         ResumeComp,
         SkillsComp,
-        ProjectsComp
+        ProjectsComp,
+        ContactComp
     },
     methods:{
         displaySkills(){
