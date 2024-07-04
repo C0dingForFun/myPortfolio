@@ -202,14 +202,14 @@ export default {
     .skills i{
         font-size:5vw;
     }
-    #product{
+    .products{
         min-height:100vh;
         max-height:auto;
         background-color: #125a3e;
-    }
-    .products{
         width:100vw;
+    }
+    .card{
         display:grid;
-        grid-template-columns: auto-fill(min-max,repeat());
+
     }
 </style>
