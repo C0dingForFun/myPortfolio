@@ -1,5 +1,6 @@
 <template>
   <NavBarComp/>
+  <section v-if="!$store.state.projects" class="spinner-border" role="status">Loading Projects...</section>
     <router-view/>
   <NavBarComp/>
 </template>
@@ -16,3 +17,15 @@ body{
   text-align: center;
 }
 </style>
+<script>
+export default {
+    computed:{
+        getData(){
+           return this.$store.dispatch('getData')
+        }
+    },
+    mounted(){
+        this.getData
+    }
+}
+</script>

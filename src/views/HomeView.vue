@@ -118,7 +118,7 @@
                     </div>
                 </template> 
             </skills-comp>
-            <!-- <section v-if="projects?.length"> -->
+            
             <projects-comp>
                 <template #projects >
                     <div class="container-fluid" id="projects">
@@ -139,8 +139,7 @@
                     </div>
                 </template>
             </projects-comp>   
-        <!-- </section> -->
-        <!-- <section v-else class="spinner-border" role="status">Loading Projects...</section> -->
+         
             
 </template>
 <script>
