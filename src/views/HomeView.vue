@@ -139,7 +139,6 @@
                     </div>
                 </template>
             </projects-comp>   
-         
             
 </template>
 <script>
