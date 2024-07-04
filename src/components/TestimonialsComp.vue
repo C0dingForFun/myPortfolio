@@ -1,7 +1,5 @@
-<template lang="">
-    <div>
-        
-    </div>
+<template>
+    <slot name="testimonials"></slot>
 </template>
 <script>
 export default {

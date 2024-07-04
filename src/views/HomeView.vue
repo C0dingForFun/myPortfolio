@@ -139,7 +139,21 @@
                     </div>
                 </template>
             </projects-comp>   
-            
+            <testimonials-comp v-for="testimonials in displayTestimonials()" :key="testimonials" id="testimonials">
+                <template #testimonials>
+                    <div class="container-fluid">
+                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonials">
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </testimonials-comp>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -148,6 +162,7 @@ import AboutComp from '@/components/AboutComp.vue';
 import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
+import TestimonialsComp from '@/components/TestimonialsComp.vue';
 export default {
     components:{
         NavbarComp,
@@ -155,7 +170,8 @@ export default {
         AboutComp,
         ResumeComp,
         SkillsComp,
-        ProjectsComp
+        ProjectsComp,
+        TestimonialsComp
     },
     methods:{
         displaySkills(){
@@ -163,6 +179,9 @@ export default {
         },
         displayProjects(){
             return this.$store.state.projects
+        },
+        displayTestimonials(){
+            return this.$store.state.testimonials
         }
     },
     computed:{
@@ -212,5 +231,15 @@ export default {
     }
     .card{
         background-color: #ffc695;
+    }
+    #testimonials{
+        min-height:100vh;
+        max-height:auto;
+        background-color: #ffc695;
+    }
+    .testimonials{
+        width:300px;
+        height:20vh;
+        background-color: ;
     }
 </style>
