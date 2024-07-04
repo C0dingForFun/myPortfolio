@@ -118,9 +118,19 @@
                     </div>
                 </template> 
             </skills-comp>
-            <projects-comp>
-                
-            </projects-comp>
+            <!-- <projects-comp>
+                <template #projects>
+                    <div class="card" style="width: 18rem;" v-for="project in displayProjects()" :key="project" id="projects">
+                        <img :src="project.image" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <p class="card-text">{{ project.description }}</p>
+                            <a :href="projects.github" class="btn btn-primary">Github</a>
+                            <a :href="projects.vercel" class="btn btn-primary">Live</a>
+                        </div>
+                    </div>
+                </template>
+            </projects-comp> -->
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -128,7 +138,7 @@ import HomeComp from '@/components/HomeComp.vue';
 import AboutComp from '@/components/AboutComp.vue';
 import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
-import ProjectsComp from '@/components/ProjectsComp.vue';
+// import ProjectsComp from '@/components/ProjectsComp.vue';
 export default {
     components:{
         NavbarComp,
@@ -136,11 +146,14 @@ export default {
         AboutComp,
         ResumeComp,
         SkillsComp,
-        ProjectsComp
+        // ProjectsComp
     },
     methods:{
         displaySkills(){
             return this.$store.state.skills
+        },
+        displayProjects(){
+            return this.$store.state.projects
         }
     },
     computed:{
