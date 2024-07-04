@@ -142,11 +142,41 @@
             <testimonials-comp>
                 <template #testimonials>
                     <div class="container-fluid" v-for="testimonial in displayTestimonials()" :key="testimonial" id="testimonials">
-                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                        <div id="carouselExampleRide" class="carousel slide align-content-center" data-bs-ride="true">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="testimonials">
-                                        <img :src="testimonial.image"/>
+                                        <img :src="testimonial.image" class="d-block"/>
+                                        <div>
+                                            {{ testimonial.name }}
+                                        </div>
+                                        <div>
+                                            {{ testimonial.position }}
+                                        </div>
+                                        <div>
+                                            {{ testimonial.message }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonials">
+                                        <img :src="testimonial.image" class="d-block"/>
+                                        {{ testimonial.name }}
+                                        {{ testimonial.position }}
+                                        {{ testimonial.message }}
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonials">
+                                        <img :src="testimonial.image" class="d-block"/>
+                                        {{ testimonial.name }}
+                                        {{ testimonial.position }}
+                                        {{ testimonial.message }}
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonials">
+                                        <img :src="testimonial.image" class="d-block"/>
                                         {{ testimonial.name }}
                                         {{ testimonial.position }}
                                         {{ testimonial.message }}
@@ -241,13 +271,15 @@ export default {
         background-color: #ffc695;
     }
     .testimonials{
-        width:300px;
-        height:20vh;
+        width:40vw;
+        height:30vh;
         background-color:#125a3e;
+        color:aliceblue;
+        border-radius:15px;
     }
     .testimonials img{
-        width: 50px;
-        height:50px;
+        width: 100px;
+        height:100px;
         border-radius:50%;
     }
 </style>
