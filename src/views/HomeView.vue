@@ -9,7 +9,7 @@
                 <template #skills >
                     <div id="skills" v-for="skill in displaySkills()" :key="skill">
                         <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
-                        <div class="row">
+                        <div class="row d-flex justify-content-center py-3 m-3">
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
                                     <i :class="skill.programmingSkills[0].iconClass"></i>
@@ -25,23 +25,25 @@
                                     <i :class="skill.programmingSkills[2].iconClass"></i>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.programmingSkills[3].iconClass"></i>
+                                    <!-- <i :class="skill.programmingSkills[0].iconClass"></i> -->
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.programmingSkills[4].iconClass"></i>
+                                    <!-- <i :class="skill.programmingSkills[0].iconClass"></i> -->
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.programmingSkills[5].iconClass"></i>
+                                    <!-- <i :class="skill.programmingSkills[0].iconClass"></i> -->
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row d-flex justify-content-center">
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
                                     <!-- <i :class="skill.programmingSkills[0].iconClass"></i> -->
