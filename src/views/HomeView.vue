@@ -121,8 +121,8 @@
             <!-- <section v-if="projects?.length"> -->
             <projects-comp>
                 <template #projects >
-                    <div class="container-fluid">
-                        <div class="row gap-2 projects" id="projects">
+                    <div class="container-fluid" id="projects">
+                        <div class="row gap-2 projects" >
                             <h2>Projects</h2>
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
@@ -205,14 +205,10 @@ export default {
     .skills i{
         font-size:5vw;
     }
-    .products{
-        /* min-height:100vh;
-        max-height:auto; */
-        background-color: #125a3e;
-        /* width:100vw; */
-    }
-    .products{
+    .card{
         display:grid;
-        grid-template-columns: minmax(auto-fill, repeat(400px 1fr));
+        grid-template-columns: minmax(auto-fill, repeat(300px 1fr));
+        background-color: #125a3e;
+        color:aliceblue;
     }
 </style>
