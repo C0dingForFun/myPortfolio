@@ -240,6 +240,6 @@ export default {
     .testimonials{
         width:300px;
         height:20vh;
-        background-color: ;
+        background-color:#125a3e;
     }
 </style>
