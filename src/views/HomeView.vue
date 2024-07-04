@@ -14,19 +14,26 @@
                                 <div>
                                     <i :class="skill.programmingSkills[0].iconClass"></i>
                                 </div>
-                                {{ skill.programmingSkills[0].level }}
+                                <div>
+                                    {{ skill.programmingSkills[0].level }}
+                                </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills align-content-center">
                                 <div>
                                     <i :class="skill.programmingSkills[1].iconClass"></i>
                                 </div>
-                                {{ skill.programmingSkills[1].level }}
+                                <div>
+                                    {{ skill.programmingSkills[1].level }}
+                                </div>
+                                
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills align-content-center">
                                 <div>
                                     <i :class="skill.programmingSkills[2].iconClass"></i>
                                 </div>
-                                {{ skill.programmingSkills[2].level }}
+                                <div>
+                                    {{ skill.programmingSkills[2].level }}
+                                </div>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">
@@ -34,19 +41,25 @@
                                 <div>
                                     <i :class="skill.programmingSkills[3].iconClass"></i>
                                 </div>
-                                {{ skill.programmingSkills[3].level }}
+                                <div>
+                                    {{ skill.programmingSkills[3].level }}
+                                </div>   
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills align-content-center">
                                 <div>
                                     <i :class="skill.programmingSkills[4].iconClass"></i>
                                 </div>
-                                {{ skill.programmingSkills[4].level }}
+                                <div>
+                                    {{ skill.programmingSkills[4].level }}
+                                </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills align-content-center">
                                 <div>
                                     <i :class="skill.programmingSkills[5].iconClass"></i>
                                 </div>
-                                {{ skill.programmingSkills[5].level }}
+                                <div>
+                                    {{ skill.programmingSkills[5].level }}
+                                </div>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">
@@ -54,15 +67,24 @@
                                 <div>
                                     <i :class="skill.softSkills[0].iconClass"></i>
                                 </div>
+                                <div>
+                                    {{ skill.softSkills[0].softSkill }}
+                                </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills align-content-center">
                                 <div>
                                     <i :class="skill.softSkills[1].iconClass"></i>
                                 </div>
+                                <div>
+                                    {{ skill.softSkills[1].softSkill }}
+                                </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills align-content-center">
                                 <div>
                                     <i :class="skill.softSkills[2].iconClass"></i>
+                                </div>
+                                <div>
+                                    {{ skill.softSkills[2].softSkill }}
                                 </div>
                             </div>
                         </div>
@@ -110,11 +132,12 @@ export default {
         
     }
     .skills{
-        width:210px;
-        /* height:210px; */
+        width:15vw;
+        height:20vh;
         font-size:18px;
         color:aliceblue;
         background-color: #ffc695;
+        margin:1ch;
         border-radius:50%;
         z-index:0;
         box-shadow: none;
