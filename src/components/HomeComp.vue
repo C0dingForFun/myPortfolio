@@ -20,7 +20,6 @@ export default {
 </script>
 <style scoped>
     #pic{
-        width:49.9vw;
         min-height:100vh;
         max-height: auto;
         background-color:#ffc695;
@@ -32,7 +31,6 @@ export default {
         box-shadow:8px 8px 8px rgb(0,0,0,0.5);
     }
     #text{
-        width:49vw;
         min-height:100vh;
         max-height: auto;
         background-color: #125a3e;
