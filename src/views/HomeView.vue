@@ -27,7 +27,7 @@
                           </div>
                           <div id="bootstrap" class="col-lg-6 col-md-6 col-sm-12 skills align-content-center" data-aos="zoom-in" data-aos-delay="1500">
                             <i class="lab la-bootstrap"></i>
-                            <h3>Bootstrap3</h3>
+                            <h3>Bootstrap5</h3>
                             <p>Intermediate</p>
                           </div>
         
