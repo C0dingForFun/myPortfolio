@@ -139,14 +139,17 @@
                     </div>
                 </template>
             </projects-comp>   
-            <testimonials-comp v-for="testimonials in displayTestimonials()" :key="testimonials" id="testimonials">
+            <testimonials-comp>
                 <template #testimonials>
-                    <div class="container-fluid">
+                    <div class="container-fluid" v-for="testimonial in displayTestimonials()" :key="testimonial" id="testimonials">
                         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="testimonials">
-    
+                                        <img :src="testimonial.image"/>
+                                        {{ testimonial.name }}
+                                        {{ testimonial.position }}
+                                        {{ testimonial.message }}
                                     </div>
                                 </div>
                             </div>
@@ -241,5 +244,10 @@ export default {
         width:300px;
         height:20vh;
         background-color:#125a3e;
+    }
+    .testimonials img{
+        width: 50px;
+        height:50px;
+        border-radius:50%;
     }
 </style>
