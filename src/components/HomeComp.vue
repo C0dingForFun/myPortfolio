@@ -1,13 +1,13 @@
 <template>
     <div class="container-fluid" id="home">
-        <div class="row">
+        <div class="row" style="width:100vw">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <h4 data-aos="fade-up">Hi there, I am ...</h4> 
                 <h1 data-aos="fade-up" data-aos-delay="500"><b>Gwiba Mabandla</b></h1>
                 <h4 data-aos="fade-up" data-aos-delay="1000">I am an aspiring Software Developer.</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="text">
-                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded" />
+                <img src="https://c0dingforfun.github.io/portfolioimg/Images/Landing/myLanding.png" class="rounded" data-aos="fade-up" />
             </div>
         </div>
     </div>
