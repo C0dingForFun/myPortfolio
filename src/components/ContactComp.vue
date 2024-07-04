@@ -15,5 +15,6 @@ export default {
         width:100vw;
         min-height:100vh;
         max-height:auto;
+        background-color: #ffc695;
     }
 </style>
