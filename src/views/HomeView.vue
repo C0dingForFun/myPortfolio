@@ -12,49 +12,49 @@
                         <div class="row">
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[0].iconClass"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[1].iconClass"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[2].iconClass"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[3].iconClass"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[4].iconClass"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[5].iconClass"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[0].iconClass"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[0].iconClass"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 skills">
                                 <div>
-                                    <i :class="skill.iconClass"></i>
+                                    <i :class="skill.programmingSkills[0].iconClass"></i>
                                 </div>
                             </div>
                         </div>
