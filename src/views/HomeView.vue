@@ -121,7 +121,8 @@
             <!-- <section v-if="projects?.length"> -->
             <projects-comp>
                 <template #projects >
-                    <div class="row projects" id="projects">
+                    <div class="row gap-2 projects" id="projects">
+                        <h2>Projects</h2>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
                                 <img :src="project.image" class="card-img-top" loading="lazy">
@@ -203,10 +204,10 @@ export default {
         font-size:5vw;
     }
     .products{
-        min-height:100vh;
-        max-height:auto;
+        /* min-height:100vh;
+        max-height:auto; */
         background-color: #125a3e;
-        width:100vw;
+        /* width:100vw; */
     }
     .card{
         display:grid;
