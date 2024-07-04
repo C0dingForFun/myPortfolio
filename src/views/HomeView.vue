@@ -118,9 +118,9 @@
                     </div>
                 </template> 
             </skills-comp>
-            <div>
-             <projects-comp>
-                <template #projects v-if="projects">
+            <!-- <section v-if="projects?.length"> -->
+            <projects-comp>
+                <template #projects >
                     <div class="row justify-content-between" id="projects">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
@@ -136,8 +136,8 @@
                     </div>
                 </template>
             </projects-comp>   
-        </div>
-        <div v-else class="spinner">Loading Projects...</div>
+        <!-- </section> -->
+        <!-- <section v-else class="spinner-border" role="status">Loading Projects...</section> -->
             
 </template>
 <script>
@@ -203,7 +203,6 @@ export default {
         font-size:5vw;
     }
     #product{
-        width:100vw;
         min-height:100vh;
         max-height:auto;
         background-color: #125a3e;
