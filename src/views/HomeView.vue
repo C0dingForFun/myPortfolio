@@ -118,6 +118,9 @@
                     </div>
                 </template> 
             </skills-comp>
+            <projects-comp>
+                
+            </projects-comp>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -125,13 +128,15 @@ import HomeComp from '@/components/HomeComp.vue';
 import AboutComp from '@/components/AboutComp.vue';
 import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
+import ProjectsComp from '@/components/ProjectsComp.vue';
 export default {
     components:{
         NavbarComp,
         HomeComp,
         AboutComp,
         ResumeComp,
-        SkillsComp
+        SkillsComp,
+        ProjectsComp
     },
     methods:{
         displaySkills(){
