@@ -121,7 +121,7 @@
             <!-- <section v-if="projects?.length"> -->
             <projects-comp>
                 <template #projects >
-                    <div class="row justify-content-between" id="projects">
+                    <div class="row projects" id="projects">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
                                 <img :src="project.image" class="card-img-top" loading="lazy">
@@ -206,5 +206,10 @@ export default {
         min-height:100vh;
         max-height:auto;
         background-color: #125a3e;
+    }
+    .products{
+        width:100vw;
+        display:grid;
+        grid-template-columns: auto-fill(min-max,repeat());
     }
 </style>
