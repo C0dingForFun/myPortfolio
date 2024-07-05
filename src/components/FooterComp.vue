@@ -5,19 +5,24 @@
                 <h2>LET'S GET IN TOUCH</h2>
             </div>
             <div>
-                <i class="lab la-github"></i>
-                <i class="lab la-linkedin"></i>
-                <i class="lab la-behance"></i>
+                <a href="https://github.com/C0dingForFun?tab=repositories"></a><i class="lab la-github"></i>
+                <a href="https://www.linkedin.com/in/gwiba-mabandla-314326293/"></a><i class="lab la-linkedin"></i>
+                <a href="https://www.behance.net/gwibantulini/projects"></a><i class="lab la-behance"></i>
             </div>
         </div>
-        <div class="dark  text-center">
-            All Rights Reserved © Gwiba Mabandla
+        <div class="dark text-center">
+            All Rights Reserved © Gwiba Mabandla {{ year() }}
         </div>
     </footer>
 </template>
 <script>
 export default {
-    
+    methods:{
+        year(){
+            const y = new Date();
+            return y.getFullYear();
+        }
+    }
 }
 </script>
 <style scoped>
