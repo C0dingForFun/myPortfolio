@@ -1,6 +1,6 @@
 <template>
   <NavBarComp/>
-    <router-view/>
+  <router-view/>
   <NavBarComp/>
 </template>
 
@@ -15,5 +15,22 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+@media screen {
+  
 }
 </style>
+<script>
+export default {
+    computed:{
+        getData(){
+           return this.$store.dispatch('getData')
+        }
+    },
+    mounted(){
+        this.getData
+    }
+}
+</script>
