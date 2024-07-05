@@ -207,14 +207,7 @@ components:{
         },
         displayTestimonials(){
             return this.$store.state.testimonials
-        }
-    },
-    displayProjects(){
-        return this.$store.state.projects
-    },
-    displayTestimonials(){
-        return this.$store.state.testimonials
-    }
+        },
 },
 computed:{
     getData(){
