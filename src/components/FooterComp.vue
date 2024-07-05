@@ -4,10 +4,10 @@
             <div class="pt-2">
                 <h2>LET'S GET IN TOUCH</h2>
             </div>
-            <div>
-                <a href="https://github.com/C0dingForFun?tab=repositories"></a><i class="lab la-github"></i>
-                <a href="https://www.linkedin.com/in/gwiba-mabandla-314326293/"></a><i class="lab la-linkedin"></i>
-                <a href="https://www.behance.net/gwibantulini/projects"></a><i class="lab la-behance"></i>
+            <div class="text-decoration-none">
+                <a href="https://github.com/C0dingForFun?tab=repositories" target="blank"><i class="lab la-github"></i></a>
+                <a href="https://www.linkedin.com/in/gwiba-mabandla-314326293" target="blank"><i class="lab la-linkedin"></i></a>
+                <a href="https://www.behance.net/gwibantulini/projects" target="blank"><i class="lab la-behance"></i></a>
             </div>
         </div>
         <div class="dark text-center">
@@ -78,5 +78,8 @@ export default {
     }
     .la-copyright{
         font-size: 18px;
+    }
+    a i{
+        color:aliceblue;
     }
 </style>
