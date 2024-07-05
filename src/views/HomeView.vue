@@ -127,7 +127,7 @@
                             <div class="row gap-2 projects" >
                                 <h2>Projects</h2>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <div class="card" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
+                                    <div class="card" style="width: 20rem;">
                                         <img :src="project.image" class="card-img-top" loading="lazy">
                                         <div class="card-body">
                                             <h5 class="card-title">{{ project.name }}</h5>
