@@ -170,11 +170,10 @@
                     
                 </template>
                 <template #b2>
-                    
-                            <button id="position" class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                    <button id="position" class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </template>
             </testimonials-comp>
 </template>
