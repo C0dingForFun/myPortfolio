@@ -143,7 +143,6 @@
                 </projects-comp>  
             </section> 
                 <testimonials-comp>
-                    
                     <template #b1>
                         <button id="position" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon " aria-hidden="true"></span>
@@ -152,7 +151,6 @@
                     </template>
                     <template #testimonials>
                         <div class="container-fluid align-items-center"  id="testimonials">
-                            
                             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                                 <h2 class="text">Testimonials</h2>
                                 <div class="carousel-inner">
