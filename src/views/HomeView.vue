@@ -142,10 +142,40 @@
             <testimonials-comp>
                 <template #testimonials>
                     <div class="container-fluid" v-for="testimonial in displayTestimonials()" :key="testimonial" id="testimonials">
-                        <div id="carouselExampleRide" class="carousel slide align-content-center" data-bs-ride="true">
+                        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="testimonials">
+                                <div class="carousel-item active testimonials">
+                                    <div class="w-100">
+                                        <img :src="testimonial.image" class="d-block">
+                                        {{ testimonial.name }}
+                                            <div>
+                                                {{ testimonial.position }}
+                                            </div>
+                                        </div>
+                                        <div>
+                                            {{ testimonial.message }}
+                                    </div>
+                                </div>
+                                <!-- <div class="carousel-item testimonials w-100">
+                                    <img :src="testimonial.image" class="d-block " alt="...">
+                                </div>
+                                <div class="carousel-item testimonials w-100">
+                                <img :src="testimonial.image" class="d-block" alt="...">
+                                </div> -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                    </div>
+                </template>
+            </testimonials-comp>
+            <!-- <div class="testimonials">
                                         <div class="justify-content-between">
                                             <img :src="testimonial.image" class="d-block"/> 
                                             {{ testimonial.name }}
@@ -156,38 +186,7 @@
                                         <div>
                                             {{ testimonial.message }}
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="testimonials">
-                                        <img :src="testimonial.image" class="d-block"/>
-                                        {{ testimonial.name }}
-                                        {{ testimonial.position }}
-                                        {{ testimonial.message }}
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="testimonials">
-                                        <img :src="testimonial.image" class="d-block"/>
-                                        {{ testimonial.name }}
-                                        {{ testimonial.position }}
-                                        {{ testimonial.message }}
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="testimonials">
-                                        <img :src="testimonial.image" class="d-block"/>
-                                        {{ testimonial.name }}
-                                        {{ testimonial.position }}
-                                        {{ testimonial.message }}
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </template>
-            </testimonials-comp>
+                                    </div> -->
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -267,7 +266,7 @@ export default {
         background-color: #ffc695;
     }
     #testimonials{
-        min-height:100vh;
+        min-height:80vh;
         max-height:auto;
         background-color: #ffc695;
     }
