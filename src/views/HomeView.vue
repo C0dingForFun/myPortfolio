@@ -279,7 +279,4 @@ export default {
     .text{
        position:relative;
     }
-    .col-8{
-        font-size:5vw;
-    }
 </style>
