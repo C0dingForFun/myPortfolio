@@ -179,6 +179,7 @@
                 </button>
             </template>
         </testimonials-comp>
+        <contact-comp/>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -188,6 +189,7 @@ import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
 import TestimonialsComp from '@/components/TestimonialsComp.vue';
+import ContactComp from '@/components/ContactComp.vue';
 export default {
 components:{
     NavbarComp,
@@ -196,7 +198,8 @@ components:{
     ResumeComp,
     SkillsComp,
     ProjectsComp,
-    TestimonialsComp
+    TestimonialsComp,
+    ContactComp
 },
 methods:{
     displaySkills(){
