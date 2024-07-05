@@ -146,12 +146,12 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="testimonials">
-                                        <div class="row justify-content-between">
+                                        <div class="justify-content-between">
                                             <img :src="testimonial.image" class="d-block"/> 
                                             {{ testimonial.name }}
-                                        </div>
-                                        <div>
-                                            {{ testimonial.position }}
+                                            <div>
+                                                {{ testimonial.position }}
+                                            </div>
                                         </div>
                                         <div>
                                             {{ testimonial.message }}
