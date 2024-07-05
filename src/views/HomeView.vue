@@ -130,7 +130,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">{{ project.name }}</h5>
                                         <p class="card-text">{{ project.description }}</p>
-                                        <a :href="project.github" target="blank" class="btn btn-primary">Github</a>
+                                        <a :href="project.github" target="blank" class="btn btn-primary">Github</a> 
                                         <a :href="project.vercel" target="blank" class="btn btn-primary">Live</a>
                                     </div>
                                 </div>
@@ -275,8 +275,5 @@ export default {
         width: 100px;
         height:100px;
         border-radius:50%;
-    }
-    .text{
-       position:relative;
     }
 </style>
