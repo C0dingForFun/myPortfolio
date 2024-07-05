@@ -1,6 +1,9 @@
-<template lang="">
+<template>
     <div>
-        
+
+        <slot name="b1"></slot>
+        <slot name="testimonials"></slot>
+        <slot name="b2"></slot>
     </div>
 </template>
 <script>
@@ -8,6 +11,11 @@ export default {
     
 }
 </script>
-<style lang="">
-    
+<style scoped>
+    div{
+        display: flex;
+        max-height:auto;
+        background-color: #229668;
+    }
+
 </style>
