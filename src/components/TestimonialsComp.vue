@@ -15,7 +15,7 @@ export default {
     div{
         display: flex;
         max-height:auto;
-        background-color: #104a33;
+        background-color: #229668;
     }
 
 </style>

@@ -264,11 +264,11 @@ export default {
     #testimonials{
         min-height:80vh;
         max-height:auto;
-        background-color: #104a33;
+        background-color: #229668;
     }
     .testimonials{
         height:33vh;
-        background-color:#104a33;
+        background-color:#125a3e;
         color:aliceblue;
         border-radius:15px;
     }
