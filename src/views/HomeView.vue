@@ -149,17 +149,17 @@
                 </template>
                 <template #testimonials>
                     <div class="container-fluid align-items-center"  id="testimonials">
-                        <h2 class="text">Testimonials</h2>
+                        <!-- <h2 class="text">Testimonials</h2> -->
                         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                             <div class="carousel-inner">
-                                <div class="carousel-item testimonials w-100"  v-for="(testimonial,index) in displayTestimonials()" :key="testimonial" :class="{'active':index==0}">
+                                <div class="carousel-item testimonials" v-for="(testimonial,index) in displayTestimonials()" :key="testimonial" :class="{'active':index==0}">
                                     <div class="row w-100">
                                         <div class="col-2">
-                                            <img :src="testimonial.image" class="d-block">
+                                            <img :src="testimonial.image" class="d-block bg-white">
                                         </div>
                                         <div class="col-8 pt-4">
-                                            {{ testimonial.name }}<br>
-                                            {{ testimonial.position }}
+                                            <b>{{ testimonial.name }}<br>
+                                            {{ testimonial.position }}</b>
                                         </div>
                                     </div>
                                     <div>
@@ -266,7 +266,7 @@ export default {
         background-color: #ffc695;
     }
     .testimonials{
-        height:30vh;
+        height:33vh;
         background-color:#125a3e;
         color:aliceblue;
         border-radius:15px;
@@ -275,5 +275,8 @@ export default {
         width: 100px;
         height:100px;
         border-radius:50%;
+    }
+    .text{
+       position:relative;
     }
 </style>
