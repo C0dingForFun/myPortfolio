@@ -17,6 +17,9 @@ body{
   text-align: center;
   overflow-x:hidden;
 }
+@media screen {
+  
+}
 </style>
 <script>
 export default {
