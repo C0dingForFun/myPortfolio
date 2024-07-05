@@ -161,7 +161,7 @@
                                         <div class="col-2">
                                             <img :src="testimonial.image" class="d-block bg-white">
                                         </div>
-                                        <div class="col-8 pt-4">
+                                        <div class="col-8 pt-4 mx-2">
                                             <b>{{ testimonial.name }}<br>
                                             {{ testimonial.position }}</b>
                                         </div>
@@ -273,7 +273,7 @@ export default {
         background-color: #229668;
     }
     .testimonials{
-        height:35vh;
+        height:33vh;
         background-color:#125a3e;
         color:aliceblue;
         border-radius:15px;
