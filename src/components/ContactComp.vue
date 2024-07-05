@@ -1,9 +1,11 @@
 <template >
     <div class="container-fluid" id="contact">
-            <div class="container-fluid">
-              <div class="container" data-aos="fade-up">       
+        <div class="container-fluid align-items-center">
+            <div class="container" data-aos="fade-up">       
+                  <div>
+                      <h2>Contact</h2>
+                  </div>
                 <div class="row d-flex align-items-center mt-4">
-
                   <div class="col-lg-4 text-center">
                     <div data-aos="fade-up">
                       <div>
@@ -12,7 +14,7 @@
                         <p>Mitchell's Plain</p>
                       </div>
 
-                      <div class="email">
+                      <div>
                       <i class="lar la-envelope"></i>
                         <h4>Email:</h4>
                        <a href="#"><p>gwibantulini8@gmail.com</p></a>
@@ -60,5 +62,34 @@ export default {
         min-height:100vh;
         max-height:auto;
         background-color: #ffc695;
+        color: aliceblue;
+    }
+    #contact a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    #contact a:hover{
+        text-decoration: underline;
+        color: aliceblue;
+    }
+    #contact i{
+        font-size:30px;
+        color:#125a3e;
+    }
+    input{
+        background-color: #125a3e;
+    }
+    textarea{
+        background-color: #125a3e;
+    }
+    button{
+        color: aliceblue;
+        background-color: #125a3e;
+        transition:1s;
+    }
+    button:hover{
+        background-color:aliceblue;
+        color:#125a3e;
+        transform: translateY(-10px);
     }
 </style>
