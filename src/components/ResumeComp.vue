@@ -62,14 +62,6 @@ export default {
         displayWork(){
             return this.$store.state.workExp
         }
-    },
-    computed:{
-        getData(){
-           return this.$store.dispatch('getData')
-        }
-    },
-    mounted(){
-        this.getData
     }
 }
 </script>

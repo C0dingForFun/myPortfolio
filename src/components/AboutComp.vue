@@ -18,7 +18,7 @@
                             <p>Age: {{ myDescription.age }}</p>
                             <p>Aspiring: {{ myDescription.aspiringToBe }}</p>
                         </div>
-                        <a href="file.doc" class="mx-auto mb-1 align-content-center text-center" download>Download CV</a>
+                        <a href="https://c0dingforfun.github.io/portfolioimg/CV/Cv.doc" class="mx-auto mb-1 align-content-center text-center" download>Download CV</a>
                     </div> 
                 </div>
             </div>

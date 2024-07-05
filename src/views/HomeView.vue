@@ -1,38 +1,37 @@
 <template>
-    <navbar-comp>
-        <router-view/>
-    </navbar-comp>
-    <home-comp/>
-    <about-comp/>
-    <resume-comp/>
-    <skills-comp>
-            <template #skills >
-                <div id="skills" v-for="skill in displaySkills()" :key="skill">
-                    <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
-                    <div class="row d-flex justify-content-center py-3">
-                        <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                            <div>
-                                <i :class="skill.programmingSkills[0].iconClass"></i>
-                            </div>
-                            <div>
-                                {{ skill.programmingSkills[0].language }}
-                            </div>
-                            <div>
-                                {{ skill.programmingSkills[0].level }}
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                            <div>
-                                <i :class="skill.programmingSkills[1].iconClass"></i>
-                            </div>
-                            <div>
-                                {{ skill.programmingSkills[1].language }}
-                            </div>
-                            <div>
-                                {{ skill.programmingSkills[1].level }}
-                            </div>
-                            
-                        </div>
+        <navbar-comp>
+            <router-view/>
+        </navbar-comp>
+        <home-comp/>
+        <about-comp/>
+        <resume-comp/>
+            <skills-comp>
+                    <template #skills >
+                        <div id="skills" v-for="skill in displaySkills()" :key="skill">
+                            <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
+                            <div class="row d-flex justify-content-center py-3">
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[0].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[0].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[0].level }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[1].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[1].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[1].level }}
+                                    </div>
+                                </div>
                         <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
                             <div>
                                 <i :class="skill.programmingSkills[2].iconClass"></i>
@@ -140,7 +139,6 @@
             </template>
         </projects-comp>   
         <testimonials-comp>
-            
             <template #b1>
                 <button id="position" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon " aria-hidden="true"></span>
@@ -179,7 +177,6 @@
             </template>
         </testimonials-comp>
         <contact-comp/>
-
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -201,9 +198,16 @@ components:{
     TestimonialsComp,
     ContactComp
 },
-methods:{
-    displaySkills(){
-        return this.$store.state.skills
+    methods:{
+        displaySkills(){
+            return this.$store.state.skills
+        },
+        displayProjects(){
+            return this.$store.state.projects
+        },
+        displayTestimonials(){
+            return this.$store.state.testimonials
+        }
     },
     displayProjects(){
         return this.$store.state.projects
@@ -223,61 +227,64 @@ mounted(){
 }
 </script>
 <style scoped>
-#position{
-    position:static ;
-}
-h2{
-    text-align: center;
-    color:aliceblue;
-}
-#skills{
-    min-height:100vh;
-    max-height:auto;
-    background-color: #125a3e;
-    
-}
-.skills{
-    width:25vw;
-    height:28vh;
-    font-size:100%;
-    color:aliceblue;
-    background-color: #ffc695;
-    margin:1ch;
-    border-radius:50%;
-    transition:1s;
-}
-.skills:hover{
-    text-shadow:5px 5px #125a3e;
-    cursor:pointer;
-    box-shadow:10px 10px 10px 10px rgb(0,0,0,0.5)
-}
-.skills i{
-    font-size:5vw;
-}
-#projects{
-    margin:auto;
-    background-color: #125a3e;
-    color:aliceblue;
-}
-.card{
-    display:grid;
-    grid-template-columns: minmax(auto-fill, repeat(400px, 1fr));
-    background-color: #ffc695;
-}
-#testimonials{
-    min-height:80vh;
-    max-height:auto;
-    background-color: #229668;
-}
-.testimonials{
-    height:33vh;
-    background-color:#125a3e;
-    color:aliceblue;
-    border-radius:15px;
-}
-.testimonials img{
-    width: 100px;
-    height:100px;
-    border-radius:50%;
-}
+    #position{
+        position:static ;
+    }
+    h2{
+        text-align: center;
+        color:aliceblue;
+    }
+    #skills{
+        min-height:100vh;
+        max-height:auto;
+        background-color: #125a3e;
+        
+    }
+    .skills{
+        width:25vw;
+        height:28vh;
+        font-size:100%;
+        color:aliceblue;
+        background-color: #ffc695;
+        margin:1ch;
+        border-radius:50%;
+        transition:1s;
+    }
+    .skills:hover{
+        text-shadow:5px 5px #125a3e;
+        cursor:pointer;
+        box-shadow:10px 10px 10px 10px rgb(0,0,0,0.5)
+    }
+    .skills i{
+        font-size:5vw;
+    }
+    .projects{
+        display:grid;
+        grid-template-columns: minmax(auto-fill, repeat(400px, 1fr));
+    }
+    #projects{
+        margin:auto;
+        background-color: #125a3e;
+        color:aliceblue;
+    }
+    .card{
+        
+        background-color: #ffc695;
+    }
+    #testimonials{
+        min-height:80vh;
+        max-height:auto;
+        background-color: #229668;
+    }
+    .testimonials{
+        height:33vh;
+        background-color:#125a3e;
+        color:aliceblue;
+        border-radius:15px;
+    }
+    .testimonials img{
+        width: 100px;
+        height:100px;
+        border-radius:50%;
+    }
 </style>
