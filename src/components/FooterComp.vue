@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="dark text-center">
-            All Rights Reserved<i class="las la-copyright"></i>Gwiba Mabandla {{ year() }}
+            All Rights Reserved<i class="las la-copyright pt-1"></i>Gwiba Mabandla {{ year() }}
         </div>
     </footer>
 </template>
