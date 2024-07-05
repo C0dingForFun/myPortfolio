@@ -162,7 +162,7 @@
                                             {{ testimonial.position }}</b>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="pt-3">
                                         {{ testimonial.message }}
                                     </div>
                                 </div>

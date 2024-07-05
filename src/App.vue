@@ -16,6 +16,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   overflow-x:hidden;
+  scroll-behavior: smooth;
 }
 @media screen {
   
