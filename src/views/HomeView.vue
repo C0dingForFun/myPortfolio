@@ -148,22 +148,22 @@
                             </button>
                 </template>
                 <template #testimonials>
-                    <h2>Testimonials</h2>
                     <div class="container-fluid align-items-center"  id="testimonials">
+                        <h2 class="text">Testimonials</h2>
                         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                             <div class="carousel-inner">
                                 <div class="carousel-item testimonials w-100"  v-for="(testimonial,index) in displayTestimonials()" :key="testimonial" :class="{'active':index==0}">
-                                            <div class="row w-100">
-                                                <div class="col-2">
-                                                    <img :src="testimonial.image" class="d-block">
-                                                </div>
-                                                <div class="col-8 pt-4">
-                                                    {{ testimonial.name }}<br>
-                                                    {{ testimonial.position }}
-                                                </div>
-                                            </div>
-                                        <div>
-                                            {{ testimonial.message }}
+                                    <div class="row w-100">
+                                        <div class="col-2">
+                                            <img :src="testimonial.image" class="d-block">
+                                        </div>
+                                        <div class="col-8 pt-4">
+                                            {{ testimonial.name }}<br>
+                                            {{ testimonial.position }}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        {{ testimonial.message }}
                                     </div>
                                 </div>
                             </div>
@@ -219,9 +219,9 @@ export default {
 }
 </script>
 <style scoped>
-#position{
-    position:static ;
-}
+    #position{
+        position:static ;
+    }
     h2{
         text-align: center;
         color:aliceblue;
