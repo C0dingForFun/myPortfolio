@@ -167,7 +167,6 @@
                         </div>
                         </div>
                 </div>
-                
             </template>
             <template #b2>
                 <button id="position" class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
@@ -177,6 +176,7 @@
             </template>
         </testimonials-comp>
         <contact-comp/>
+        <footer-comp/>
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
@@ -187,6 +187,7 @@ import SkillsComp from '@/components/SkillsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
 import TestimonialsComp from '@/components/TestimonialsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
+import FooterComp from '@/components/FooterComp.vue';
 export default {
 components:{
     NavbarComp,
@@ -196,7 +197,8 @@ components:{
     SkillsComp,
     ProjectsComp,
     TestimonialsComp,
-    ContactComp
+    ContactComp,
+    FooterComp
 },
     methods:{
         displaySkills(){
