@@ -149,7 +149,6 @@
             </template>
             <template #testimonials>
                 <div class="container-fluid align-items-center"  id="testimonials">
-                    
                     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                         <h2 class="text">Testimonials</h2>
                         <div class="carousel-inner">
