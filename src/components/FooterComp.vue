@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="dark text-center">
-            All Rights Reserved <span style="font-size:22px;position: relative;top:3px">©</span> Gwiba Mabandla {{ year() }}
+            All Rights Reserved<i class="las la-copyright"></i>Gwiba Mabandla {{ year() }}
         </div>
     </footer>
 </template>
@@ -75,5 +75,8 @@ export default {
         width:38px;
         background-color: aliceblue;
         border-radius:50%;
+    }
+    .la-copyright{
+        font-size: 18px;
     }
 </style>
