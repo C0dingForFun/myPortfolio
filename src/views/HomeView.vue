@@ -180,6 +180,7 @@
             </template>
         </testimonials-comp>
         <contact-comp/>
+
 </template>
 <script>
 import NavbarComp from '@/components/NavbarComp.vue';
