@@ -149,8 +149,9 @@
                 </template>
                 <template #testimonials>
                     <div class="container-fluid align-items-center"  id="testimonials">
-                        <!-- <h2 class="text">Testimonials</h2> -->
+                        
                         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                            <h2 class="text">Testimonials</h2>
                             <div class="carousel-inner">
                                 <div class="carousel-item testimonials" v-for="(testimonial,index) in displayTestimonials()" :key="testimonial" :class="{'active':index==0}">
                                     <div class="row w-100">
@@ -251,19 +252,19 @@ export default {
         font-size:5vw;
     }
     #projects{
-        display:grid;
-        grid-template-columns: minmax(auto-fill, repeat(300px, 1fr));
         margin:auto;
         background-color: #125a3e;
         color:aliceblue;
     }
     .card{
+        display:grid;
+        grid-template-columns: minmax(auto-fill, repeat(400px, 1fr));
         background-color: #ffc695;
     }
     #testimonials{
         min-height:80vh;
         max-height:auto;
-        background-color: #104a33;
+    background-color: #104a33;
     }
     .testimonials{
         height:33vh;
