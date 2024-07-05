@@ -3,7 +3,7 @@
         <div class="container-fluid align-items-center">
             <div class="container" data-aos="fade-up">       
                   <div>
-                      <h2>Contact</h2>
+                      <h2 data-aos="fade-up">Contact</h2>
                   </div>
                 <div class="row d-flex align-items-center mt-4">
                   <div class="col-lg-4 text-center">
@@ -17,7 +17,7 @@
                       <div>
                       <i class="lar la-envelope"></i>
                         <h4>Email:</h4>
-                       <a href="#"><p>gwibantulini8@gmail.com</p></a>
+                       <p>gwibantulini8@gmail.com</p>
                       </div>
                       <div>
                         <i class="las la-phone"></i>
@@ -31,19 +31,21 @@
                     <form action="https://formspree.io/f/xjvnzvav" method="POST" role="form">
                       <div class="row">
                         <div class="col-md-6 form-group">
-                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
-                          <input type="text" name="surname" class="form-control" id="surname" placeholder="Your Surname" required>
+                          <input type="text" name="surname" class="form-control" id="surname" placeholder="Your Surname" >
                         </div>
                       </div>
                       <div class="form-group mt-3">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" >
                       </div>
                       <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
                       </div>
-                      <div class="text-center mt-4 send"><button type="submit">Send Message</button></div>
+                      <div class="text-center mt-4 send">
+                        <button type="submit" @click="check()">Send Message</button>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -53,7 +55,14 @@
 </template>
 <script>
 export default {
-    
+    methods: {
+      check(){
+        let input = document.querySelectorAll();
+        if(input == ''){
+          alert('Please fill in all your info')
+        }
+      }
+    },
 }
 </script>
 <style scoped>
@@ -77,10 +86,10 @@ export default {
         color:#125a3e;
     }
     input{
-        background-color: #125a3e;
+      background-color: #125a3e;
     }
     textarea{
-        background-color: #125a3e;
+      background-color: #125a3e;
     }
     button{
         color: aliceblue;
