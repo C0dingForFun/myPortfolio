@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="dark text-center">
-            All Rights Reserved © Gwiba Mabandla {{ year() }}
+            All Rights Reserved <span style="font-size:22px;position: relative;top:3px">©</span> Gwiba Mabandla {{ year() }}
         </div>
     </footer>
 </template>
@@ -57,7 +57,7 @@ export default {
     }
     .la-github:hover{
         cursor: pointer;
-        color:darkgrey;
+        color:rgb(129, 122, 122);
         width:38px;
         background-color: aliceblue;
         border-radius:50%;
@@ -71,7 +71,7 @@ export default {
     }
     .la-behance:hover{
         cursor: pointer;
-        color:lightblue;
+        color:#11f1fd;
         width:38px;
         background-color: aliceblue;
         border-radius:50%;
