@@ -140,6 +140,7 @@
                 </template>
             </projects-comp>   
             <testimonials-comp>
+                
                 <template #b1>
                     <button id="position" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon " aria-hidden="true"></span>
@@ -147,6 +148,7 @@
                             </button>
                 </template>
                 <template #testimonials>
+                    <h2>Testimonials</h2>
                     <div class="container-fluid align-items-center"  id="testimonials">
                         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                             <div class="carousel-inner">
@@ -221,6 +223,7 @@ export default {
     position:static ;
 }
     h2{
+        text-align: center;
         color:aliceblue;
     }
     #skills{
