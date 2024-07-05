@@ -5,119 +5,122 @@
         <home-comp/>
         <about-comp/>
         <resume-comp/>
-        <skills-comp>
-                <template #skills >
-                    <div id="skills" v-for="skill in displaySkills()" :key="skill">
-                        <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
-                        <div class="row d-flex justify-content-center py-3">
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.programmingSkills[0].iconClass"></i>
+        <section class="projects">
+            <skills-comp>
+                    <template #skills >
+                        <div id="skills" v-for="skill in displaySkills()" :key="skill">
+                            <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
+                            <div class="row d-flex justify-content-center py-3">
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[0].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[0].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[0].level }}
+                                    </div>
                                 </div>
-                                <div>
-                                    {{ skill.programmingSkills[0].language }}
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[1].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[1].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[1].level }}
+                                    </div>
+                                    
                                 </div>
-                                <div>
-                                    {{ skill.programmingSkills[0].level }}
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[2].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[2].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[2].level }}
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.programmingSkills[1].iconClass"></i>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[3].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[3].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[3].level }}
+                                    </div>   
                                 </div>
-                                <div>
-                                    {{ skill.programmingSkills[1].language }}
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[4].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[4].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[4].level }}
+                                    </div>
                                 </div>
-                                <div>
-                                    {{ skill.programmingSkills[1].level }}
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.programmingSkills[5].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[5].language }}
+                                    </div>
+                                    <div>
+                                        {{ skill.programmingSkills[5].level }}
+                                    </div>
                                 </div>
-                                
                             </div>
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.programmingSkills[2].iconClass"></i>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.softSkills[0].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.softSkills[0].softSkill }}
+                                    </div>
+                                    <div>
+                                        {{ skill.softSkills[0].description }}
+                                    </div>
                                 </div>
-                                <div>
-                                    {{ skill.programmingSkills[2].language }}
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
+                                    <div>
+                                        <i :class="skill.softSkills[1].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.softSkills[1].softSkill }}
+                                    </div>
+                                    <div>
+                                        {{ skill.softSkills[1].description }}
+                                    </div>
                                 </div>
-                                <div>
-                                    {{ skill.programmingSkills[2].level }}
+                                <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-3 align-content-center">
+                                    <div>
+                                        <i :class="skill.softSkills[2].iconClass"></i>
+                                    </div>
+                                    <div>
+                                        {{ skill.softSkills[2].softSkill }}
+                                    </div>
+                                    <div>
+                                        {{ skill.softSkills[2].description }}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.programmingSkills[3].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[3].language }}
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[3].level }}
-                                </div>   
-                            </div>
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.programmingSkills[4].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[4].language }}
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[4].level }}
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.programmingSkills[5].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[5].language }}
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[5].level }}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.softSkills[0].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[0].softSkill }}
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[0].description }}
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
-                                <div>
-                                    <i :class="skill.softSkills[1].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[1].softSkill }}
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[1].description }}
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-3 align-content-center">
-                                <div>
-                                    <i :class="skill.softSkills[2].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[2].softSkill }}
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[2].description }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </template> 
-            </skills-comp>
+                    </template> 
+                </skills-comp>
+        </section>
+
             <projects-comp>
                 <section v-if="!$store.state.projects" class="spinner-border" role="status">Loading Projects...</section>
                 <template #projects >
@@ -163,7 +166,7 @@
                                             {{ testimonial.position }}</b>
                                         </div>
                                     </div>
-                                    <div class="pt-3">
+                                    <div class="pt-2">
                                         {{ testimonial.message }}
                                     </div>
                                 </div>
@@ -251,14 +254,17 @@ export default {
     .skills i{
         font-size:5vw;
     }
+    .projects{
+        display:grid;
+        grid-template-columns: minmax(auto-fill, repeat(400px, 1fr));
+    }
     #projects{
         margin:auto;
         background-color: #125a3e;
         color:aliceblue;
     }
     .card{
-        display:grid;
-        grid-template-columns: minmax(auto-fill, repeat(400px, 1fr));
+        
         background-color: #ffc695;
     }
     #testimonials{
@@ -267,7 +273,7 @@ export default {
         background-color: #229668;
     }
     .testimonials{
-        height:33vh;
+        height:35vh;
         background-color:#125a3e;
         color:aliceblue;
         border-radius:15px;
