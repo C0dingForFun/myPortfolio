@@ -82,4 +82,15 @@ export default {
     a i{
         color:aliceblue;
     }
+    @media only screen and (max-width:600px){
+        .footer{
+            padding-top:5px;
+            height:15vh;
+            background-color:#104a33; 
+        }
+        .dark{
+            height:5vh;
+            font-size:12px;
+         }
+    }
 </style>
