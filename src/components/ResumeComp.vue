@@ -131,12 +131,6 @@ export default {
     }
     }
     @media only screen and (max-width:600px) {
-    #resume{
-        min-height:100vh;
-        max-height: auto;
-        background-color: #ffc695; 
-        color:aliceblue;
-    }
     .education{
         width:300px;
         height:502px;
