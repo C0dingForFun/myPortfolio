@@ -5,7 +5,7 @@
                 <img :src='myDescription.image' class="rounded" data-aos="fade-left"/>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center text-white" id="text">
-                <div class="text-start mx-auto" style="width:420px;">
+                <div class="text-start mx-auto me">
                     <h5 data-aos="fade-left">Discover</h5>
                     <h2 data-aos="fade-left" data-aos-delay="100"><b>About Me</b></h2>
                     <p data-aos="fade-left" data-aos-delay="200">{{myDescription.me}}</p> 
@@ -62,7 +62,6 @@ export default {
         max-height: auto;
         background-color: #ffc695;
         color:aliceblue;
-        
     }
     h5{
         color:#125a3e; 
@@ -84,5 +83,22 @@ export default {
         transform: scale(1.05);
         box-shadow: 8px 8px 8px rgb(0,0,0,0.5);
         background-color: black;
+    }
+    .me{
+        width:420px;
+    }
+    @media only screen and (max-width:600px) {
+    #text{
+        margin: auto;
+    }
+    .extra-info{
+            width:300px;
+            background-color:#125a3e;
+            box-shadow:10px 10px 10px rgb(0,0,0,0.5); 
+            margin:auto;
+        } 
+    .me{
+        width:300px;
+    }
     }
 </style>
