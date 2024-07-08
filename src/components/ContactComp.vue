@@ -44,7 +44,7 @@
                         <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
                       </div>
                       <div class="text-center mt-4 send">
-                        <button type="submit" @click="check()">Send Message</button>
+                        <button type="submit" @click="check()">Send Message</button> <br>
                       </div>
                     </form>
                   </div>

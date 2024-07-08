@@ -53,9 +53,7 @@ export default {
 </script>
 <style scoped>
     nav {
-      background-color:#229668
-      
-      ;
+      background-color:#229668;
     }
 
     nav a {
