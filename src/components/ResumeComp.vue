@@ -114,4 +114,66 @@ export default {
         height:50px;
         border-radius:50%;
     }
+    @media only screen and (max-width:720px) {
+    .education{
+        width:500px;
+        height:502px;
+        background-color: #125a3e;
+        color:aliceblue;
+        margin:auto;
+    }
+    .experience{
+        width:500px;
+        height:502px;
+        background-color: #125a3e;
+        color:aliceblue;
+        margin:auto;
+    }
+    }
+    @media only screen and (max-width:600px) {
+    #resume{
+        min-height:100vh;
+        max-height: auto;
+        background-color: #ffc695; 
+        color:aliceblue;
+    }
+    .education{
+        width:300px;
+        height:502px;
+        background-color: #125a3e;
+        color:aliceblue;
+        margin:auto;
+    }
+    .experience{
+        width:300px;
+        height:502px;
+        background-color: #125a3e;
+        color:aliceblue;
+        margin:auto;
+    }
+    .timeline img{
+        width:80px;
+        height:510px;
+    }
+    .spine_road img{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+    }
+    .college img{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+    }
+    .lca img{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+    }
+    .work img{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+    }
+}
 </style>

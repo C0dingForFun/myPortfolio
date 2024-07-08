@@ -121,7 +121,7 @@
             <section v-if="!$store.state.projects" class="spinner-border" role="status">Loading Projects...</section>
             <template #projects >
                 <div class="container-fluid" id="projects">
-                    <div class="row gap-2 projects" >
+                    <div class="row projects" >
                         <h2>Projects</h2>
                         <div class="row">
                             <div class=" card col-lg-5 col-md- col-sm-12" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
@@ -155,9 +155,11 @@
                                     <div class="col-2">
                                         <img :src="testimonial.image" class="d-block bg-white">
                                     </div>
-                                    <div class="col-8 pt-4">
-                                        <b>{{ testimonial.name }}<br>
-                                        {{ testimonial.position }}</b>
+                                    <div class="col-10 pt-4">
+                                        <span>
+                                            <b>{{ testimonial.name }}<br>
+                                            {{ testimonial.position }}</b>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="pt-3">
@@ -165,7 +167,7 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </template>
             <template #b2>
@@ -253,23 +255,21 @@ mounted(){
     .skills i{
         font-size:5vw;
     }
-    .projects{
-        display:grid;
-        grid-template-columns: minmax(auto-fill, repeat(400px, 1fr));
+    #projects > .card{
+        background-color: #ffc695;
     }
     #projects{
         margin:auto;
         background-color: #125a3e;
         color:aliceblue;
     }
-    .card{
-        
-        background-color: #ffc695;
-    }
     #testimonials{
         min-height:80vh;
         max-height:auto;
         background-color: #229668;
+    }
+    span{
+        margin-right: 20px;
     }
     .testimonials{
         height:33vh;
