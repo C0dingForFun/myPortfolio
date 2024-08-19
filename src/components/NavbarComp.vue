@@ -37,18 +37,9 @@
               </nav>       
 </template>
 <script>
-// let	nav = document.querySelector('nav');
-		
-// 		window.addEventListener('scroll', function(){
-// 			if (window.screenY > 100){
-//         nav.setAttribute('class','bg-dark');
 
-// 			}
-// 			else {
-// 				nav.removeAttribute('class','bg-dark');	
-// 			}
-// });
 export default {
+  
 }
 </script>
 <style scoped>
