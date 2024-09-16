@@ -66,7 +66,7 @@ export default {
     methods: {
       check(){
         
-        if(this.name !== ''){
+        if(this.name !== '' && this.surname !== ''  && this.email !== ''  && this.message !== '' ){
           alert('Please fill in all your info')
         }
       }
