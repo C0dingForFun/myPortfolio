@@ -123,7 +123,7 @@
                     <div class="row projects" >
                         <h2>Projects</h2>
                         <div class="row">
-                            <div class=" card col-lg-5 col-md- col-sm-12" style="width: 20rem;" v-for="project in displayProjects()" :key="project" id="projects">
+                            <div class="card col-lg-5 col-md- col-sm-12" v-for="project in displayProjects()" :key="project" id="projects">
                                 <img :src="project.image" class="card-img-top" loading="lazy">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ project.name }}</h5>
@@ -208,13 +208,17 @@ mounted(){
     .skills i{
         font-size:5vw;
     }
-    .card{
-        background-color: #ffc695;
-    }
     #projects{
+        width:100vw;
+        height:100vh;
         margin:auto;
         background-color: #125a3e;
         color:aliceblue;
+    }
+    #projects .card{
+        width:18rem;
+        background-color: #ffc695;
+        height:10vh;
     }
 
 @media only screen and (max-width:600px){
