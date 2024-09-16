@@ -68,8 +68,10 @@ export default {
 <style scoped>
     #contact{
         width:100vw;
-        min-height:100vh;
-        max-height:auto;
+        height:100vh;
+        /* max-height:auto; */
+        display:flex;
+
         background-color: #ffc695;
         color: aliceblue;
     }

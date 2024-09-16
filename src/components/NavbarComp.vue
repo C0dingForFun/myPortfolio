@@ -11,7 +11,7 @@
                         <button type="button" class="btn-close bg-white pt-2" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
                       </div>
                       <div class="offcanvas-body text-center">                   
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-3 f-3">                     
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 p-3 f-3">                     
                           <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#home">Home</a>
                           </li>
@@ -43,7 +43,7 @@ export default {
 
     nav a {
         font-weight: bold;
-        font-size:20px;
+        font-size:25px;
         color:white;
         text-decoration: none;
         transition: 1s;
