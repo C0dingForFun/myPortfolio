@@ -75,6 +75,7 @@ export default {
           "type": "success",
           "dangerouslyHTMLString": true
           })
+          location.reload();
         }
         else{
           toast("Please fill in all fields.", {
