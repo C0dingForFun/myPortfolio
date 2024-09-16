@@ -4,7 +4,6 @@
         </navbar-comp>
         <home-comp/>
         <about-comp/>
-        <resume-comp/>
             <skills-comp>
                     <template #skills >
                         <div id="skills" v-for="skill in displaySkills()" :key="skill">
@@ -137,46 +136,7 @@
                     </div>
                 </div>
             </template>
-        </projects-comp>   
-        <testimonials-comp>
-            <template #b1>
-                <button id="position" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-            </template>
-            <template #testimonials>
-                <div class="container-fluid align-items-center"  id="testimonials">
-                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-                        <h2 class="text">Testimonials</h2>
-                        <div class="carousel-inner">
-                            <div class="carousel-item testimonials" v-for="(testimonial,index) in displayTestimonials()" :key="testimonial" :class="{'active':index==0}">
-                                <div class="row w-100">
-                                    <div class="col-2">
-                                        <img :src="testimonial.image" class="d-block bg-white">
-                                    </div>
-                                    <div class="col-10 pt-4">
-                                        <span>
-                                            <b>{{ testimonial.name }}<br>
-                                            {{ testimonial.position }}</b>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="pt-3">
-                                    {{ testimonial.message }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </template>
-            <template #b2>
-                <button id="position" class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </template>
-        </testimonials-comp>
+        </projects-comp> 
         <contact-comp/>
         <footer-comp/>
 </template>
@@ -184,10 +144,8 @@
 import NavbarComp from '@/components/NavbarComp.vue';
 import HomeComp from '@/components/HomeComp.vue';
 import AboutComp from '@/components/AboutComp.vue';
-import ResumeComp from '@/components/ResumeComp.vue';
 import SkillsComp from '@/components/SkillsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
-import TestimonialsComp from '@/components/TestimonialsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 export default {
@@ -195,10 +153,8 @@ components:{
     NavbarComp,
     HomeComp,
     AboutComp,
-    ResumeComp,
     SkillsComp,
     ProjectsComp,
-    TestimonialsComp,
     ContactComp,
     FooterComp
 },
@@ -208,9 +164,6 @@ components:{
         },
         displayProjects(){
             return this.$store.state.projects
-        },
-        displayTestimonials(){
-            return this.$store.state.testimonials
         },
 },
 computed:{
