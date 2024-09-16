@@ -19,6 +19,9 @@
                             <a class="nav-link" href="#about">About</a>
                           </li>
                           <li class="nav-item">
+                            <a class="nav-link" href="#resume">Education & Experience</a>
+                          </li>
+                          <li class="nav-item">
                             <a class="nav-link" href="#projects">Projects</a>
                           </li>
                           <li class="nav-item">

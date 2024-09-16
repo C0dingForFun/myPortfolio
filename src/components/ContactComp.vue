@@ -31,20 +31,20 @@
                     <form action="https://formspree.io/f/xjvnzvav" method="POST" role="form">
                       <div class="row">
                         <div class="col-md-6 form-group">
-                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" v-model="name">
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
-                          <input type="text" name="surname" class="form-control" id="surname" placeholder="Your Surname" >
+                          <input type="text" name="surname" class="form-control" id="surname" placeholder="Your Surname" v-model="surname">
                         </div>
                       </div>
                       <div class="form-group mt-3">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" >
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" v-model="email">
                       </div>
                       <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" v-model="message"></textarea>
                       </div>
-                      <div class="text-center mt-4 send">
-                        <button type="submit" @click="check()">Send Message</button> <br>
+                      <div class="text-center mt-4 send mb-2">
+                        <button type="submit" @click.prevent="check()">Send Message</button> <br>
                       </div>
                     </form>
                   </div>
@@ -55,10 +55,18 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      name:'',
+      surname:'',
+      email:'',
+      message:''
+    }
+  },
     methods: {
       check(){
-        let input = document.querySelectorAll();
-        if(input == ''){
+        
+        if(this.name !== ''){
           alert('Please fill in all your info')
         }
       }
@@ -68,8 +76,8 @@ export default {
 <style scoped>
     #contact{
         width:100vw;
-        height:100vh;
-        /* max-height:auto; */
+        min-height:100vh;
+        max-height:auto;
         background-color: #ffc695;
         color: aliceblue;
     }
