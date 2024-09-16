@@ -54,6 +54,9 @@
     </div>
 </template>
 <script>
+import {toast} from 'vue3-toastify';
+import "vue3-toastify/dist/index.css";
+   
 export default {
   data() {
     return {
@@ -67,7 +70,18 @@ export default {
       check(){
         
         if(this.name !== '' && this.surname !== ''  && this.email !== ''  && this.message !== '' ){
-          alert('Please fill in all your info')
+          toast("Message sent successfully", {
+          "theme": "dark",
+          "type": "success",
+          "dangerouslyHTMLString": true
+          })
+        }
+        else{
+          toast("Please fill in all fields.", {
+          "theme": "dark",
+          "type": "error",
+          "dangerouslyHTMLString": true
+          })
         }
       }
     },
