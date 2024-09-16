@@ -70,8 +70,6 @@ export default {
         width:100vw;
         height:100vh;
         /* max-height:auto; */
-        display:flex;
-
         background-color: #ffc695;
         color: aliceblue;
     }

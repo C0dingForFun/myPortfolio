@@ -8,7 +8,7 @@
                     <template #skills >
                         <div id="skills" v-for="skill in displaySkills()" :key="skill">
                             <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
-                            <div class="row d-flex justify-content-center py-3">
+                            <div class="row d-flex justify-content-center py-3 mt-5">
                                 <div class="col-lg-4 col-col-md-4 col-sm-12 skills pb-2 align-content-center">
                                     <div>
                                         <i :class="skill.programmingSkills[0].iconClass"></i>
@@ -208,32 +208,13 @@ mounted(){
     .skills i{
         font-size:5vw;
     }
-    #projects > .card{
+    .card{
         background-color: #ffc695;
     }
     #projects{
         margin:auto;
         background-color: #125a3e;
         color:aliceblue;
-    }
-    #testimonials{
-        min-height:80vh;
-        max-height:auto;
-        background-color: #229668;
-    }
-    span{
-        margin-right: 20px;
-    }
-    .testimonials{
-        height:33vh;
-        background-color:#125a3e;
-        color:aliceblue;
-        border-radius:15px;
-    }
-    .testimonials img{
-        width: 100px;
-        height:100px;
-        border-radius:50%;
     }
 
 @media only screen and (max-width:600px){
