@@ -79,6 +79,7 @@ export default {
     .education{
         width:500px;
         height:502px;
+        border-radius: 20px;
         background-color: #125a3e;
         color:aliceblue;
         margin-left: 15vw;
@@ -86,6 +87,7 @@ export default {
     .experience{
         width:500px;
         height:502px;
+        border-radius: 20px;
         background-color: #125a3e;
         color:aliceblue;
         margin-left: 10vw;
