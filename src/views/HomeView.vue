@@ -120,7 +120,7 @@
         <projects-comp>
             <template #projects>
                 <div class="container-fluid pt-5" id="projects" v-if="displayProjects()">
-                    <div class="row projects" >
+                    <div class="row projects mb-5" >
                         <h2 class="mt-5" data-aos="fade-up">Projects</h2>
                         <div class="row mt-5">
                             <div class=" card col-lg-5 col-md- col-sm-12" v-for="project in displayProjects()" :key="project" id="projects" data-aos="fade-up" data-aos-delay="300">
@@ -224,15 +224,15 @@ mounted(){
         color:aliceblue;
     }
     #projects .card{
-        /* background-color: #ffc695; */
+        background-color: #ffc695;
         width:18rem;
         border:none;
         height:25rem;
     }
     #projects .card img{
         /* background-color: #ffc695; */
-        margin: auto;
-        object-fit: cover;
+        
+        width:vw;
         height:20vh;
         /* width:5vw; */
     }
