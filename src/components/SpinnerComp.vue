@@ -9,8 +9,8 @@ export default {
 <style scoped>
     .spinner {
   --size: 30px;
-  --first: #005bba;
-  --second: #fed500;
+  --first: #ffc695;
+  --second: #125a3e;
   width: 100px;
   height: 100px;
   position: relative;

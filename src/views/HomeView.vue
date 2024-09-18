@@ -118,9 +118,8 @@
             </template> 
         </skills-comp>
         <projects-comp>
-            <section v-if="!$store.state.projects" class="spinner-border" role="status">Loading Projects...</section>
             <template #projects >
-                <div class="container-fluid" id="projects">
+                <div class="container-fluid" id="projects" v-if="displayProjects()">
                     <div class="row projects" >
                         <h2>Projects</h2>
                         <div class="row">
@@ -136,6 +135,9 @@
                         </div>
                     </div>
                 </div>
+                <div v-else>
+                    <SpinnerComp/>
+                </div>
             </template>
         </projects-comp>
         <contact-comp/>
@@ -150,6 +152,7 @@ import SkillsComp from '@/components/SkillsComp.vue';
 import ProjectsComp from '@/components/ProjectsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
+import SpinnerComp from '@/components/SpinnerComp.vue';
 export default {
 components:{
     NavbarComp,
@@ -159,7 +162,8 @@ components:{
     SkillsComp,
     ProjectsComp,
     ContactComp,
-    FooterComp
+    FooterComp,
+    SpinnerComp
 },
     methods:{
         displaySkills(){
@@ -170,7 +174,7 @@ components:{
         },
         displayTestimonials(){
             return this.$store.state.testimonials
-        },
+        }
 },
 computed:{
     getData(){
