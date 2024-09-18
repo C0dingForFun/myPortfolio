@@ -44,7 +44,7 @@
                         <textarea class="form-control" name="message" rows="5" placeholder="Message" v-model="message"></textarea>
                       </div>
                       <div class="text-center mt-4 send mb-2">
-                        <button type="submit" @click.prevent="check()">Send Message</button> <br>
+                        <button type="submit" @click.prevent="check()" target="blank">Send Message</button> <br>
                       </div>
                     </form>
                   </div>
@@ -75,7 +75,6 @@ export default {
           "type": "success",
           "dangerouslyHTMLString": true
           })
-          location.reload();
         }
         else{
           toast("Please fill in all fields.", {

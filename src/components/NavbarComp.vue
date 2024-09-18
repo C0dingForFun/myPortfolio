@@ -36,14 +36,29 @@
 <script>
 
 export default {
-  
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeMount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const nav = document.getElementsByClassName('navbar')[0];
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }
+  }
 }
 </script>
 <style scoped>
     nav {
-      background-color:#229668;
+      background-color:transparent;
     }
-
+    
     nav a {
         font-weight: bold;
         font-size:25px;
@@ -59,6 +74,9 @@ export default {
       width:60px;
       height:60px;
     }
-
+    .navbar.scrolled{
+      background-color: #229668;
+      transition: 0.8s;
+    }
 
 </style>
