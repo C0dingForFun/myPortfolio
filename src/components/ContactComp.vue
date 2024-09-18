@@ -17,12 +17,12 @@
                       <div>
                       <i class="lar la-envelope"></i>
                         <h4>Email:</h4>
-                       <p>gwibantulini8@gmail.com</p>
+                       <a href="mailto:gwibantulini8@gmail.com">gwibantulini8@gmail.com</a>
                       </div>
                       <div>
                         <i class="las la-phone"></i>
                         <h4>Call:</h4>
-                        <p>+21 71 122 8132</p>
+                        <a href="tel:+21 71 122 8132">+21 71 122 8132</a>
                       </div>
                     </div>
                   </div>

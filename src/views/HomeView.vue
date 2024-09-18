@@ -122,8 +122,8 @@
                 <div class="container-fluid pt-5" id="projects" v-if="displayProjects()">
                     <div class="row projects mb-5" >
                         <h2 class="mt-5" data-aos="fade-up">Projects</h2>
-                        <div class="row mt-5">
-                            <div class=" card col-lg-5 col-md- col-sm-12" v-for="project in displayProjects()" :key="project" id="projects" data-aos="fade-up" data-aos-delay="300">
+                        <div class="row mt-2">
+                            <div class=" card mt-3 col-lg-4 col-md-4 col-sm-12" v-for="project in displayProjects()" :key="project" id="projects" data-aos="fade-up" data-aos-delay="300">
                                 <img :src="project.image" class="card-img-top" loading="lazy">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ project.name }}</h5>
@@ -227,23 +227,23 @@ mounted(){
         background-color: #ffc695;
         width:18rem;
         border:none;
-        height:25rem;
+        height:23rem;
     }
     #projects .card img{
-        /* background-color: #ffc695; */
-        
-        width:vw;
+        width:100%;
         height:20vh;
-        /* width:5vw; */
     }
     .btn{
         background-color: #125a3e;
         margin:0.1em;
         transition: 1s;
         color:aliceblue;
+        font-weight: 600;
     }
     .btn:hover{
         background-color: #229668;
+        color:#ffc695;
+        font-weight: 600;
     }
 
 @media only screen and (max-width:600px){
