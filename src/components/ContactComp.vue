@@ -11,18 +11,18 @@
                       <div>
                         <i class="las la-map-marker" ></i>
                         <h4>Location:</h4>
-                        <p>Mitchell's Plain</p>
+                        <a href="https://www.google.com/maps/place/Mitchells+Plain,+Cape+Town/@-34.0484351,18.5617394,13z/data=!3m1!4b1!4m6!3m5!1s0x1dcc4721e60ec221:0xd3097704b4edb9ac!8m2!3d-34.0485946!4d18.6056873!16zL20vMGJycXN5?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D" target="blank">Mitchell's Plain</a>
                       </div>
 
                       <div>
                       <i class="lar la-envelope"></i>
                         <h4>Email:</h4>
-                       <a href="mailto:gwibantulini8@gmail.com">gwibantulini8@gmail.com</a>
+                       <a href="mailto:gwibantulini8@gmail.com" target="blank">gwibantulini8@gmail.com</a>
                       </div>
                       <div>
                         <i class="las la-phone"></i>
                         <h4>Call:</h4>
-                        <a href="tel:+21 71 122 8132">+21 71 122 8132</a>
+                        <a href="tel:+21 71 122 8132" target="blank">+21 71 122 8132</a>
                       </div>
                     </div>
                   </div>
