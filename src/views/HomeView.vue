@@ -21,34 +21,39 @@
                                         {{ skill.programmingSkills[0].level }}
                                     </div>   
                                 </div>
-                                
-                                <div>
-                                    <i :class="skill.programmingSkills[1].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[1].language }}
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[1].level }}
-                                </div>
-                                <div>
-                                    <i :class="skill.programmingSkills[0].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[0].language }}
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[0].level }}
-                                </div>
-                                <div>
-                                    <i :class="skill.programmingSkills[0].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[0].language }}
-                                </div>
-                                <div>
-                                    {{ skill.programmingSkills[0].level }}
-                                </div>
+                               <div class="skills py-4">
+                                   <div>
+                                       <i :class="skill.programmingSkills[1].iconClass"></i>
+                                   </div>
+                                   <div>
+                                       {{ skill.programmingSkills[1].language }}
+                                   </div>
+                                   <div>
+                                       {{ skill.programmingSkills[1].level }}
+                                   </div>
+                               </div> 
+                               <div class="skills py-4">
+                                   <div>
+                                       <i :class="skill.programmingSkills[2].iconClass"></i>
+                                   </div>
+                                   <div>
+                                       {{ skill.programmingSkills[2].language }}
+                                   </div>
+                                   <div>
+                                       {{ skill.programmingSkills[2].level }}
+                                   </div>
+                               </div>
+                               <div class="skills py-4">
+                                   <div>
+                                       <i :class="skill.programmingSkills[3].iconClass"></i>
+                                   </div>
+                                   <div>
+                                       {{ skill.programmingSkills[3].language }}
+                                   </div>
+                                   <div>
+                                       {{ skill.programmingSkills[3].level }}
+                                   </div>
+                               </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 pb-2 align-content-center">
                                 <div class="skills py-4 mx-auto">
@@ -64,7 +69,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="skills col-lg-4 col-col-md-4 col-sm-12 pb-2 align-content-center">
+                            <div class="col-lg-4 col-col-md-4 col-sm-12 pb-2 align-content-center">
                                 <div>
                                     <i :class="skill.softSkills[0].iconClass"></i>
                                 </div>
@@ -176,8 +181,8 @@ mounted(){
         color:aliceblue;
     }
     #skills{
-        min-height:100vh;
-        max-height:auto;
+        /* min-height:100vh; */
+        /* max-height:auto; */
         background-color: #125a3e;
         
     }
