@@ -118,7 +118,7 @@
             </template> 
         </skills-comp>
         <projects-comp>
-            <template #projects >
+            <template #projects>
                 <div class="container-fluid" id="projects" v-if="displayProjects()">
                     <div class="row projects" >
                         <h2>Projects</h2>
