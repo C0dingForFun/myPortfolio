@@ -121,6 +121,6 @@ export default {
     button:hover{
         background-color:aliceblue;
         color:#125a3e;
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
 </style>
