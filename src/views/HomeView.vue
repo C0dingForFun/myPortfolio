@@ -236,6 +236,15 @@ mounted(){
         height:20vh;
         /* width:5vw; */
     }
+    .btn{
+        background-color: #125a3e;
+        margin:0.1em;
+        transition: 1s;
+        color:aliceblue;
+    }
+    .btn:hover{
+        background-color: #229668;
+    }
 
 @media only screen and (max-width:600px){
     
