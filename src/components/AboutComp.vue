@@ -11,14 +11,13 @@
                     <p data-aos="fade-left" data-aos-delay="200">{{myDescription.me}}</p> 
                     <div class="row justify-content-between extra-info rounded" data-aos="fade-left" data-aos-delay="400">
                         <div class="col-6">
-                            <p>Name: {{ myDescription.name }}</p>
-                            <p>Hobbies: {{ myDescription.hobbies }}</p>
+                            <p> <span>Name:</span> {{ myDescription.name }}</p>
+                            <p><span>Hobbies:</span> {{ myDescription.hobbies }}</p>
                         </div>
                         <div class="col-6">
-                            <p>Age: {{ myDescription.age }}</p>
-                            <p>Aspiring: {{ myDescription.aspiringToBe }}</p>
+                            <p><span>Age:</span> {{ myDescription.age }}</p>
+                            <p><span>Aspiring:</span> {{ myDescription.aspiringToBe }}</p>
                         </div>
-                        <a href="https://c0dingforfun.github.io/portfolioimg/CV/Cv.doc" class="mx-auto mb-1 align-content-center text-center" download>Download CV</a>
                     </div> 
                 </div>
             </div>
@@ -84,21 +83,25 @@ export default {
         box-shadow: 8px 8px 8px rgb(0,0,0,0.5);
         background-color: black;
     }
+    span{
+        color:#ffc695;
+        font-weight: 900;
+    }
     .me{
         width:420px;
     }
     @media only screen and (max-width:600px) {
-    #text{
-        margin: auto;
-    }
-    .extra-info{
+        #text{
+            margin: auto;
+        }
+        .extra-info{
+                width:300px;
+                background-color:#125a3e;
+                box-shadow:10px 10px 10px rgb(0,0,0,0.5); 
+                margin:auto;
+            } 
+        .me{
             width:300px;
-            background-color:#125a3e;
-            box-shadow:10px 10px 10px rgb(0,0,0,0.5); 
-            margin:auto;
-        } 
-    .me{
-        width:300px;
-    }
+        }
     }
 </style>
