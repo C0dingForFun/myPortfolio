@@ -119,10 +119,10 @@
         </skills-comp>
         <projects-comp>
             <template #projects>
-                <div class="container-fluid" id="projects" v-if="displayProjects()">
+                <div class="container-fluid pt-5" id="projects" v-if="displayProjects()">
                     <div class="row projects" >
-                        <h2>Projects</h2>
-                        <div class="row">
+                        <h2 class="mt-5">Projects</h2>
+                        <div class="row mt-5">
                             <div class=" card col-lg-5 col-md- col-sm-12" v-for="project in displayProjects()" :key="project" id="projects">
                                 <img :src="project.image" class="card-img-top" loading="lazy">
                                 <div class="card-body">
