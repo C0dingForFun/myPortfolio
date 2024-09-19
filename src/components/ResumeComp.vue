@@ -9,19 +9,19 @@
                             <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div class="lca mt-2">
+                            <div class="lca mt-4">
                                 <img :src="resume.placeOfInstitution[0].image"/>
                                 <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[0].year}}</p>
                                 <p>{{ resume.placeOfInstitution[0].techBackground}}</p>
                             </div>
-                            <div class="college">
+                            <div class="college mt-3">
                                 <img :src="resume.placeOfInstitution[1].image"/>
                                 <p>{{ resume.placeOfInstitution[1].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[1].year}}</p>
                                 <p>{{ resume.placeOfInstitution[1].course}}</p>
                             </div>
-                            <div class="spine_road">
+                            <div class="spine_road mt-3">
                                 <img :src="resume.placeOfInstitution[2].image"/>
                                 <p>{{ resume.placeOfInstitution[2].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[2].year}}</p>
@@ -135,7 +135,7 @@ export default {
     @media only screen and (max-width:600px) {
     .education{
         width:300px;
-        height:502px;
+        height:450px;
         background-color: #125a3e;
         color:aliceblue;
         margin:auto;
