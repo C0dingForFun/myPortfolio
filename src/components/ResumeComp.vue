@@ -9,7 +9,7 @@
                             <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div class="spine_road mt-2">
+                            <div class="lca mt-2">
                                 <img :src="resume.placeOfInstitution[0].image"/>
                                 <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[0].year}}</p>
@@ -21,7 +21,7 @@
                                 <p>{{ resume.placeOfInstitution[1].year}}</p>
                                 <p>{{ resume.placeOfInstitution[1].course}}</p>
                             </div>
-                            <div class="lca">
+                            <div class="spine_road">
                                 <img :src="resume.placeOfInstitution[2].image"/>
                                 <p>{{ resume.placeOfInstitution[2].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[2].year}}</p>
