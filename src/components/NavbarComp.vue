@@ -5,7 +5,7 @@
                     <button class="navbar-toggler mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">                    
                       <span class="text-white p-2" style="font-size:30px;">&#9776;</span>                      
                     </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width:100%;background-color: rgb(0,0,0,0.8);">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="width:50vw;background-color: rgb(0,32,0,0.8);">
                       <div class="offcanvas-header">
                         <img src="https://c0dingforfun.github.io/portfolioimg/Images/Logo/Logo.png" alt="My Logo" loading="lazy">
                         <button type="button" class="btn-close bg-white pt-2" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
@@ -13,19 +13,19 @@
                       <div class="offcanvas-body text-center">                   
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 p-3 f-3">                     
                           <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home"> <button data-bs-dismiss="offcanvas" aria-label="Close">Home</button></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#about"> <button data-bs-dismiss="offcanvas" aria-label="Close">About</button></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
+                            <a class="nav-link" href="#resume"> <button data-bs-dismiss="offcanvas" aria-label="Close">Resume</button></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#projects"> <button data-bs-dismiss="offcanvas" aria-label="Close">Projects</button></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact"> <button data-bs-dismiss="offcanvas" aria-label="Close">Contact</button></a>
                           </li>                     
                         </ul>                    
                       </div>
@@ -59,14 +59,16 @@ export default {
       background-color:transparent;
     }
     
-    nav a {
+    nav a button{
         font-weight: bold;
+        border: none;
+        background: none;
         font-size:25px;
         color:white;
         text-decoration: none;
         transition: 1s;
     }
-    nav a:hover{
+    nav a button:hover{
         color:white;
         text-shadow:4px 4px black;
     }
