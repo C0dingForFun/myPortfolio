@@ -115,7 +115,7 @@
                                     <h5 class="card-title">{{ project.name }}</h5>
                                     <p class="card-text">{{ project.description }}</p>
                                     <a :href="project.github" target="blank" class="btn">Github</a> 
-                                    <a :href="project.vercel" target="blank" class="btn">Live</a>
+                                    <a :href="project.live" target="blank" class="btn">Live</a>
                                 </div>
                             </div>
                         </div>
