@@ -10,66 +10,56 @@
                         <h2 class="text-center pt-5" data-aos="fade-up"> Skills </h2>
                         <div class="row justify-content-center py-3">
                             <div class="col-lg-4 col-col-md-4 col-sm-12 pb-2 align-content-center">
-                                <div class="skills py-4">
-                                    <div>
-                                        <i :class="skill.programmingSkills[0].iconClass"></i>
+                                <h3 class="text-white text-center" data-aos="fade-up" data-aos-delay="300">Programming Skills</h3>
+                                <div class="row">
+                                    <div class="skills py-4">
+                                        <div>
+                                            <i :class="skill.programmingSkills[0].iconClass"></i>
+                                        </div>
+                                        <div>
+                                            {{ skill.programmingSkills[0].language }}
+                                        </div>
+                                        <div>
+                                            {{ skill.programmingSkills[0].level }}
+                                        </div>   
                                     </div>
-                                    <div>
-                                        {{ skill.programmingSkills[0].language }}
-                                    </div>
-                                    <div>
-                                        {{ skill.programmingSkills[0].level }}
-                                    </div>   
+                                   <div class="skills py-4">
+                                       <div>
+                                           <i :class="skill.programmingSkills[1].iconClass"></i>
+                                       </div>
+                                       <div>
+                                           {{ skill.programmingSkills[1].language }}
+                                       </div>
+                                       <div>
+                                           {{ skill.programmingSkills[1].level }}
+                                       </div>
+                                   </div> 
+                                   <div class="skills py-4">
+                                       <div>
+                                           <i :class="skill.programmingSkills[2].iconClass"></i>
+                                       </div>
+                                       <div>
+                                           {{ skill.programmingSkills[2].language }}
+                                       </div>
+                                       <div>
+                                           {{ skill.programmingSkills[2].level }}
+                                       </div>
+                                   </div>
+                                   <div class="skills py-4">
+                                       <div>
+                                           <i :class="skill.programmingSkills[3].iconClass"></i>
+                                       </div>
+                                       <div>
+                                           {{ skill.programmingSkills[3].language }}
+                                       </div>
+                                       <div>
+                                           {{ skill.programmingSkills[3].level }}
+                                       </div>
+                                   </div>
                                 </div>
-                               <div class="skills py-4">
-                                   <div>
-                                       <i :class="skill.programmingSkills[1].iconClass"></i>
-                                   </div>
-                                   <div>
-                                       {{ skill.programmingSkills[1].language }}
-                                   </div>
-                                   <div>
-                                       {{ skill.programmingSkills[1].level }}
-                                   </div>
-                               </div> 
-                               <div class="skills py-4">
-                                   <div>
-                                       <i :class="skill.programmingSkills[2].iconClass"></i>
-                                   </div>
-                                   <div>
-                                       {{ skill.programmingSkills[2].language }}
-                                   </div>
-                                   <div>
-                                       {{ skill.programmingSkills[2].level }}
-                                   </div>
-                               </div>
-                               <div class="skills py-4">
-                                   <div>
-                                       <i :class="skill.programmingSkills[3].iconClass"></i>
-                                   </div>
-                                   <div>
-                                       {{ skill.programmingSkills[3].language }}
-                                   </div>
-                                   <div>
-                                       {{ skill.programmingSkills[3].level }}
-                                   </div>
-                               </div>
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 pb-2 align-content-center">
-                                <div class="skills py-4 mx-auto">
-                                    <div>
-                                    <i :class="skill.softSkills[0].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[0].softSkill }}
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[0].description }}
-                                </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-lg-4 col-col-md-4 col-sm-12 pb-2 align-content-center">
+                                <h3 class="text-white text-center" data-aos="fade-up" data-aos-delay="300">Soft Skills</h3>
                                 <div>
                                     <i :class="skill.softSkills[0].iconClass"></i>
                                 </div>
@@ -109,7 +99,7 @@
                     <div class="row projects mb-5" >
                         <h2 class="mt-5" data-aos="fade-up">Projects</h2>
                         <div class="row mt-2">
-                            <div class=" card mt-3 col-lg-4 col-md-4 col-sm-12" v-for="project in displayProjects()" :key="project" id="projects" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card mt-3 col-lg-4 col-md-4 col-sm-12" v-for="project in displayProjects()" :key="project" id="projects" data-aos="fade-up" data-aos-delay="300">
                                 <img :src="project.image" class="card-img-top" loading="lazy">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ project.name }}</h5>
@@ -181,8 +171,6 @@ mounted(){
         color:aliceblue;
     }
     #skills{
-        /* min-height:100vh; */
-        /* max-height:auto; */
         background-color: #125a3e;
         
     }
@@ -193,7 +181,6 @@ mounted(){
         color:aliceblue;
         background-color: #ffc695;
         margin: auto;
-        /* margin:1ch; */
         padding: 0%;
         border-radius:50%;
         transition:1s;
