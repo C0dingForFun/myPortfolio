@@ -182,7 +182,7 @@ mounted(){
     }
     #skills{
         /* min-height:100vh; */
-        /* max-height:auto;34  */
+        /* max-height:auto; */
         background-color: #125a3e;
         
     }
