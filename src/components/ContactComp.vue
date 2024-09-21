@@ -115,6 +115,7 @@ export default {
     }
     button{
         color: aliceblue;
+        border-radius:5px;
         background-color: #125a3e;
         transition:1s;
     }
