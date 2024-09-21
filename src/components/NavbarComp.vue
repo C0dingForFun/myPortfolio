@@ -58,7 +58,6 @@ export default {
     nav {
       background-color:transparent;
     }
-    
     nav a button{
         font-weight: bold;
         border: none;
@@ -70,6 +69,10 @@ export default {
     }
     nav a button:hover{
         color:white;
+        text-shadow:4px 4px black;
+    }
+    .nav-item .nav-link a button.active{
+        color:black !important;
         text-shadow:4px 4px black;
     }
     nav img{
