@@ -60,32 +60,51 @@
                             </div>
                             <div class="col-lg-4 col-col-md-4 col-sm-12 pb-2 align-content-center">
                                 <h3 class="text-white text-center" data-aos="fade-up" data-aos-delay="300">Soft Skills</h3>
-                                <div>
-                                    <i :class="skill.softSkills[0].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[0].softSkill }}
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[0].description }}
-                                </div>
-                                <div>
-                                    <i :class="skill.softSkills[1].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[1].softSkill }}
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[1].description }}
-                                </div>
-                                <div>
-                                    <i :class="skill.softSkills[2].iconClass"></i>
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[2].softSkill }}
-                                </div>
-                                <div>
-                                    {{ skill.softSkills[2].description }}
+                                <div class="row">
+                                    <div class="skills">
+                                        <div>
+                                            <i :class="skill.softSkills[0].iconClass"></i>
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[0].softSkill }}
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[0].description }}
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div>
+                                            <i :class="skill.softSkills[1].iconClass"></i>
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[1].softSkill }}
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[1].description }}
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div>
+                                            <i :class="skill.softSkills[2].iconClass"></i>
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[2].softSkill }}
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[2].description }}
+                                        </div>
+                                    </div>
+                                    <div class="skills">
+                                        <div>
+                                            <i :class="skill.softSkills[2].iconClass"></i>
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[2].softSkill }}
+                                        </div>
+                                        <div>
+                                            {{ skill.softSkills[2].description }}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +207,7 @@ mounted(){
     .skills:hover{
         text-shadow:5px 5px #125a3e;
         cursor:pointer;
-        box-shadow:10px 10px 10px 10px rgb(0,0,0,0.5)
+        box-shadow:8px 8px 8px 10px rgb(0,0,0,0.5)
     }
     .skills i{
         font-size:5vw;
