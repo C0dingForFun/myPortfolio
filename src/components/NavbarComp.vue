@@ -78,6 +78,7 @@ export default {
     nav img{
       width:60px;
       height:60px;
+      filter: drop-shadow(3px 3px #229668);
     }
     .navbar.scrolled{
       background-color: #229668;
