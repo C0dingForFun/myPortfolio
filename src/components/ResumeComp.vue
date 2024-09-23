@@ -13,7 +13,7 @@
                                 <img :src="resume.placeOfInstitution[0].image"/>
                                 <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[0].year}}</p>
-                                <p>{{ resume.placeOfInstitution[0].techBackground}}</p>
+                                <p>{{ resume.placeOfInstitution[0].course}}</p>
                             </div>
                             <div class="college mt-3">
                                 <img :src="resume.placeOfInstitution[1].image"/>
@@ -25,7 +25,7 @@
                                 <img :src="resume.placeOfInstitution[2].image"/>
                                 <p>{{ resume.placeOfInstitution[2].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[2].year}}</p>
-                                <p>{{ resume.placeOfInstitution[2].course}}</p>
+                                <p>{{ resume.placeOfInstitution[2].techBackground}}</p>
                             </div>
                         </div>
                     </div>

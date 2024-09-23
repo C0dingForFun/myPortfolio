@@ -118,7 +118,7 @@
                     <div class="row projects mb-5" >
                         <h2 class="mt-5" data-aos="fade-up">Projects</h2>
                         <div class="row mt-2">
-                            <div class="card mt-3 col-lg-4 col-md-4 col-sm-12" v-for="project in displayProjects()" :key="project" id="projects" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card mt-3 col-lg-4 col-md-4 col-sm-12" v-for="project in displayProjects()" :key="project" id="projects" data-aos="fade-up">
                                 <img :src="project.image" class="card-img-top pt-2" loading="lazy">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ project.name }}</h5>
