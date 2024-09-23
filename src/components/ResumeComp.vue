@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid overflow-hidden align-content-center" id="resume" v-for="resume in displayEducation()" :key="resume">
         <div class="row mt-5" v-for="work in displayWork()" :key="work">
-            <h2 class=" text-white mt-5 pt-5" data-aos="fade-up">Resume</h2>
+            <h2 class=" text-white mt-5 pt-5" data-aos="fade-up">Education & Experience</h2>
             <div class="col-lg-5 col-md-5 col-sm-12 mb-2" data-aos="fade-up" data-aos-delay="500">
                 <div class="education ">
                     <div class="row" >
@@ -9,19 +9,19 @@
                             <img :src="resume.eduTimeline">
                         </div>
                         <div class="col-11">
-                            <div class="lca mt-4">
+                            <div class="lca">
                                 <img :src="resume.placeOfInstitution[0].image"/>
                                 <p>{{ resume.placeOfInstitution[0].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[0].year}}</p>
                                 <p>{{ resume.placeOfInstitution[0].course}}</p>
                             </div>
-                            <div class="college mt-3">
+                            <div class="college">
                                 <img :src="resume.placeOfInstitution[1].image"/>
                                 <p>{{ resume.placeOfInstitution[1].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[1].year}}</p>
                                 <p>{{ resume.placeOfInstitution[1].course}}</p>
                             </div>
-                            <div class="spine_road mt-3">
+                            <div class="spine_road">
                                 <img :src="resume.placeOfInstitution[2].image"/>
                                 <p>{{ resume.placeOfInstitution[2].nameOfInstitution}}</p>
                                 <p>{{ resume.placeOfInstitution[2].year}}</p>
