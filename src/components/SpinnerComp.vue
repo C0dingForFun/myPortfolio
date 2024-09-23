@@ -1,5 +1,7 @@
 <template lang="">
+  <div class="container">
     <div class="spinner"></div>
+  </div>
 </template>
 <script>
 export default {
@@ -7,6 +9,11 @@ export default {
 }
 </script>
 <style scoped>
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
     .spinner {
   --size: 30px;
   --first: #ffc695;
