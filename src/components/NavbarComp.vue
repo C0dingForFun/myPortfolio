@@ -22,7 +22,7 @@
                             <a class="nav-link" href="#resume"> <button data-bs-dismiss="offcanvas" aria-label="Close">Education & Experience</button></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href=".projects"> <button data-bs-dismiss="offcanvas" aria-label="Close">Projects</button></a>
+                            <a class="nav-link" href="#projects"> <button data-bs-dismiss="offcanvas" aria-label="Close">Projects</button></a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#contact"> <button data-bs-dismiss="offcanvas" aria-label="Close">Contact</button></a>

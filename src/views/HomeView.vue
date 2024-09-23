@@ -114,9 +114,9 @@
         <resume-comp/>
         <projects-comp>
             <template #projects>
-                <div class="projects pb-4 pt-5" v-if="displayProjects()">
+                <div class="pb-4 pt-5" v-if="displayProjects()" id="projects">
                     <h2 class="mb-2 mt-5" data-aos="fade-up">Projects</h2>
-                    <div class="container-fluid pt-5" id="projects" >
+                    <div class="container-fluid pt-5" id="project" >
                             <div class="row mt-2" v-for="project in displayProjects()" :key="project.id">
                                 <div class="card mt-3 col-lg-4 col-md-4 col-sm-12 mx-2" data-aos="fade-up">
                                     <img :src="project.image" class="card-img-top pt-2" loading="lazy">
@@ -212,17 +212,17 @@ mounted(){
     .skills i{
         font-size:5vw;
     }
-    .projects{
+    #projects{
         background-color: #125a3e;
     }
-    #projects {
+    #project {
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
         margin:auto;
         width:100vw;
     }
-    .projects .card{
+    #projects .card{
         background-color: #ffc695;
         color:aliceblue;
         width:18rem;
@@ -230,13 +230,13 @@ mounted(){
         height:23rem;
         transition:0.6s;
     }
-    .projects h2{
-        margin-top:5vh;
-    }
-    .projects .card:hover{
+    #projects .card:hover{
         background-color: #229668;
         cursor: pointer;
-        box-shadow:5px 5px 5px 5px black;
+        box-shadow:1px 8px 8px 8px rgb(0,0,0,0.5);
+    }
+    #projects h2{
+        margin-top:5vh;
     }
     #projects .card img{
         width:100%;
