@@ -96,13 +96,13 @@
                                     </div>
                                     <div class="skills" data-aos="fade-up">
                                         <div>
-                                            <i :class="skill.softSkills[2].iconClass"></i>
+                                            <i :class="skill.softSkills[3].iconClass"></i>
                                         </div>
                                         <div>
-                                            {{ skill.softSkills[2].softSkill }}
+                                            {{ skill.softSkills[3].softSkill }}
                                         </div>
                                         <div>
-                                            {{ skill.softSkills[2].description }}
+                                            {{ skill.softSkills[3].description }}
                                         </div>
                                     </div>
                                 </div>
@@ -192,10 +192,11 @@ mounted(){
     #skills{
         background-color: #125a3e;
     }
-    .skills{
+    #skills .skills{
         width:250px;
         height:230px;
         font-size:100%;
+        transition: 1s;
         color:aliceblue;
         background-color: #ffc695;
         margin: auto;
@@ -203,10 +204,9 @@ mounted(){
         flex-direction: column;
         justify-content: center;
         border-radius:50%;
-        transition:1s;
     }
     .skills:hover{
-        text-shadow:5px 5px #125a3e;
+        text-shadow:3px 3px #125a3e;
         cursor:pointer;
         box-shadow:8px 8px 8px 10px rgb(0,0,0,0.5)
     }
@@ -280,6 +280,7 @@ mounted(){
         flex-direction: column;
         justify-content: center;
         font-size:24px;
+        transition: 1s;
     }
     #project{
         display:grid;
