@@ -12,7 +12,7 @@
                             <div class="col-lg-5 col-col-md-4 col-sm-12 pb-2 align-content-center">
                                 <h3 class="text-white text-center mb-5" data-aos="fade-up">Programming Skills</h3>
                                 <div class="row">
-                                    <div class="skills py-4">
+                                    <div class="skills py-4" data-aos="fade-up">
                                         <div>
                                             <i :class="skill.programmingSkills[0].iconClass"></i>
                                         </div>
@@ -23,7 +23,7 @@
                                             {{ skill.programmingSkills[0].level }}
                                         </div>   
                                     </div>
-                                   <div class="skills py-4">
+                                   <div class="skills py-4" data-aos="fade-up">
                                        <div>
                                            <i :class="skill.programmingSkills[1].iconClass"></i>
                                        </div>
@@ -34,7 +34,7 @@
                                            {{ skill.programmingSkills[1].level }}
                                        </div>
                                    </div> 
-                                   <div class="skills py-4">
+                                   <div class="skills py-4" data-aos="fade-up">
                                        <div>
                                            <i :class="skill.programmingSkills[2].iconClass"></i>
                                        </div>
@@ -45,7 +45,7 @@
                                            {{ skill.programmingSkills[2].level }}
                                        </div>
                                    </div>
-                                   <div class="skills py-4">
+                                   <div class="skills py-4" data-aos="fade-up">
                                        <div>
                                            <i :class="skill.programmingSkills[3].iconClass"></i>
                                        </div>
@@ -61,7 +61,7 @@
                             <div class="col-lg-5 col-col-md-4 col-sm-12 pb-2 align-content-center">
                                 <h3 class="text-white text-center mb-5" data-aos="fade-up">Soft Skills</h3>
                                 <div class="row">
-                                    <div class="skills">
+                                    <div class="skills" data-aos="fade-up">
                                         <div>
                                             <i :class="skill.softSkills[0].iconClass"></i>
                                         </div>
@@ -72,7 +72,7 @@
                                             {{ skill.softSkills[0].description }}
                                         </div>
                                     </div>
-                                    <div class="skills">
+                                    <div class="skills" data-aos="fade-up">
                                         <div>
                                             <i :class="skill.softSkills[1].iconClass"></i>
                                         </div>
@@ -83,7 +83,7 @@
                                             {{ skill.softSkills[1].description }}
                                         </div>
                                     </div>
-                                    <div class="skills">
+                                    <div class="skills" data-aos="fade-up">
                                         <div>
                                             <i :class="skill.softSkills[2].iconClass"></i>
                                         </div>
@@ -94,7 +94,7 @@
                                             {{ skill.softSkills[2].description }}
                                         </div>
                                     </div>
-                                    <div class="skills">
+                                    <div class="skills" data-aos="fade-up">
                                         <div>
                                             <i :class="skill.softSkills[2].iconClass"></i>
                                         </div>
