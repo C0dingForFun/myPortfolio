@@ -194,13 +194,12 @@ mounted(){
         
     }
     .skills{
-        width:15vw;
-        height:25vh;
+        width:250px;
+        height:250px;
         font-size:100%;
         color:aliceblue;
         background-color: #ffc695;
         margin: auto;
-        padding: 0%;
         border-radius:50%;
         transition:1s;
     }
@@ -255,8 +254,8 @@ mounted(){
         font-weight: 600;
     }
 
-@media only screen and (max-width:800px){
-    #projects {
+@media only screen and (max-width:780px){
+    #project {
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
@@ -266,10 +265,15 @@ mounted(){
 }
 @media only screen and (max-width:600px){
     .skills{
-        width:20vw;
-        height:20vh;
+        width:280px;
+        height:280px;
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size:24px;
     }
-    #projects {
+    #project{
         display:grid;
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
