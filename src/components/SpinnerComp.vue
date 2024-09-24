@@ -1,6 +1,6 @@
 <template lang="">
   <div class="container">
-    <div class="spinner"></div>
+    <div class="spinner"></div>Loading...
   </div>
 </template>
 <script>
@@ -13,6 +13,8 @@ export default {
   display:flex;
   justify-content: center;
   align-items: center;
+  color:#125a3e;
+  font-weight: 900;
 }
     .spinner {
   --size: 30px;
