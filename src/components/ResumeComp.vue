@@ -116,7 +116,7 @@ export default {
         height:50px;
         border-radius:50%;
     }
-    @media only screen and (max-width:720px) {
+    @media only screen and (max-width:780px) {
     .education{
         width:500px;
         height:502px;
