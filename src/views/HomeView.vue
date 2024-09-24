@@ -200,6 +200,9 @@ mounted(){
         color:aliceblue;
         background-color: #ffc695;
         margin: auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         border-radius:50%;
         transition:1s;
     }
