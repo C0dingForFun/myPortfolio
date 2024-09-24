@@ -256,13 +256,13 @@ mounted(){
         cursor:pointer;
         box-shadow:8px 8px 8px 10px rgb(0,0,0,0.5)
     }
-    .skills .mysql:hover{
+    .skills:hover > .mysql{
         /* text-shadow:3px 3px #125a3e; */
         cursor:pointer;
         filter:drop-shadow(3px 3px #125a3e);
     }
     .skills i{
-        font-size:5vw;
+        font-size:55px;
     }
     #projects{
         background-color: #125a3e;
