@@ -232,10 +232,10 @@ mounted(){
         transition:0.6s;
     }
     #project .card:hover{
-        
         background-color: #ffc695;
         cursor: pointer;
         box-shadow:1px 8px 8px 8px rgb(0,0,0,0.5);
+        transform: rotate(0.9deg);
     }
     #projects h2{
         margin-top:5vh;
