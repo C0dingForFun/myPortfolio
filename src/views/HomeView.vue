@@ -191,7 +191,6 @@ mounted(){
     }
     #skills{
         background-color: #125a3e;
-        
     }
     .skills{
         width:250px;
