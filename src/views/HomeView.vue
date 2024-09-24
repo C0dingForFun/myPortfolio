@@ -245,7 +245,7 @@ mounted(){
         height:20vh;
     }
     #project:hover > :not(:hover){
-        opacity: .8;
+        opacity: .9;
     }
     .btn{
         background-color: #125a3e;
