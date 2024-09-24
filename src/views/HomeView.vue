@@ -6,7 +6,7 @@
         <about-comp/>
         <skills-comp>
                 <template #skills >
-                    <div id="skills" v-for="skill in displaySkills()" :key="skill">
+                    <div id="skills" v-for="skill in displaySkills()" :key="skill.id">
                         <div class="text-center pt-5 mb-5" data-aos="fade-up"> </div>
                         <div class="row justify-content-center py-3">
                             <div class="col-lg-5 col-col-md-4 col-sm-12 pb-2 align-content-center">
