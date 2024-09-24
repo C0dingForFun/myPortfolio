@@ -194,7 +194,7 @@ mounted(){
     }
     .skills{
         width:250px;
-        height:250px;
+        height:230px;
         font-size:100%;
         color:aliceblue;
         background-color: #ffc695;
@@ -231,8 +231,9 @@ mounted(){
         height:23rem;
         transition:0.6s;
     }
-    #projects .card:hover{
-        background-color: #229668;
+    #project .card:hover{
+        
+        background-color: #ffc695;
         cursor: pointer;
         box-shadow:1px 8px 8px 8px rgb(0,0,0,0.5);
     }
@@ -243,17 +244,22 @@ mounted(){
         width:100%;
         height:20vh;
     }
+    #project:hover > :not(:hover){
+        opacity: .8;
+    }
     .btn{
         background-color: #125a3e;
         margin:0.1em;
         transition: 1s;
         color:aliceblue;
         font-weight: 600;
+        border:2px  solid transparent;
     }
     .btn:hover{
         background-color: #ffc695;
-        color:aliceblue;
-        font-weight: 600;
+        border:2px  solid #125a3e;
+        color:#125a3e;
+        font-weight: 900;
     }
 
 @media only screen and (max-width:780px){
