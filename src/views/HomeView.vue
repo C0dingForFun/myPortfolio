@@ -324,7 +324,7 @@ mounted(){
         width:155px;
         height:180px;
         font-size:100%;
-        transition: 0.6s;
+        transition: 0.5s;
         color:aliceblue;
         background-color: #ffc695;
         margin: auto;
