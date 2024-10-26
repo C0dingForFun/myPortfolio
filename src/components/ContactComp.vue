@@ -68,7 +68,6 @@ export default {
   },
     methods: {
       check(){
-        
         if(this.name !== '' && this.surname !== ''  && this.email !== ''  && this.message !== '' ){
           toast("Message sent successfully", {
           "theme": "dark",
