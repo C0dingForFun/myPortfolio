@@ -68,21 +68,36 @@ export default {
   },
     methods: {
       check(){
-        if(this.name !== '' && this.surname !== ''  && this.email !== ''  && this.message !== '' ){
-          toast("Message sent successfully", {
-          "theme": "dark",
-          "type": "success",
-          "dangerouslyHTMLString": true
-          })
+        if(this.name  != '' && this.surname != '' && this.email != '' && this.message != '') {
+                if(this.email.includes('@')){
+                    toast("Meassage sent successfully", {
+                        "theme": "dark",
+                        "type": "success",
+                        "dangerouslyHTMLString": true,
+                        autoClose: 2000,
+                        position: toast.POSITION.BOTTOM_CENTER
+                    })
+                }
+                else{
+                    toast("Please include the '@' sign", {
+                        "theme": "dark",
+                        "type": "error",
+                        "dangerouslyHTMLString": true,
+                        autoClose: 2000,
+                        position: toast.POSITION.BOTTOM_CENTER,
+                    })
+                }
+            }
+            else{
+                toast("Please fill in the whole form", {
+                    "theme": "dark",
+                    "type": "error",
+                    "dangerouslyHTMLString": true,
+                    autoClose: 2000,
+                    position: toast.POSITION.BOTTOM_CENTER,
+                })
+            }
         }
-        else{
-          toast("Please fill in all fields.", {
-          "theme": "dark",
-          "type": "error",
-          "dangerouslyHTMLString": true
-          })
-        }
-      }
     },
 }
 </script>

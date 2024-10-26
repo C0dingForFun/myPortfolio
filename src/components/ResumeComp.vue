@@ -43,9 +43,8 @@
                             <p>{{ work.year}}</p>
                             <h4><b>Contact:</b></h4>
                             <p>{{work.contact[0].name}}</p>
-                            <p>{{work.contact[0].position}}</p>        
-                            <p>{{work.contact[0].cell}}</p>
-                            <p>{{work.contact[0].email}}</p>
+                            <p>{{work.contact[0].position}}</p>  
+                            <a href="mailto:darron@lifechoices.co.za" class="text-white text-decoration-none">{{work.contact[0].email}}</a>
                         </div>
                     </div>
                 </div> 
@@ -118,14 +117,14 @@ export default {
     }
     @media only screen and (max-width:780px) {
     .education{
-        width:500px;
+        width:400px;
         height:502px;
         background-color: #125a3e;
         color:aliceblue;
         margin:auto;
     }
     .experience{
-        width:500px;
+        width:400px;
         height:502px;
         background-color: #125a3e;
         color:aliceblue;
