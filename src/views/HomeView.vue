@@ -109,7 +109,7 @@
                                 <h3 class="text-white text-center mb-5" data-aos="fade-up">Soft Skills</h3>
                                 <div class="row">
                                     <div class="softSkills mt-2" data-aos="fade-up">
-                                        <div>
+                                        <div >
                                             <i :class="skill.softSkills[0].iconClass"></i>
                                         </div>
                                         <div>
