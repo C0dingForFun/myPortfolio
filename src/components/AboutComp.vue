@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid" id="about" v-for="myDescription in displayAboutMe()" :key="myDescription">
+    <div id="about" v-for="myDescription in displayAboutMe()" :key="myDescription">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 align-content-center" id="pic">
                 <img :src='myDescription.image' class="rounded" data-aos="fade-left"/>
@@ -43,9 +43,6 @@ export default {
 }
 </script>
 <style scoped>
-    .container-fluid{
-        width:100vw !important;
-    }
     #pic{
         min-height:100vh;
         max-height: auto;

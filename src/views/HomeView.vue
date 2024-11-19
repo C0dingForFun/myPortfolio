@@ -106,7 +106,7 @@
                             </div>
                             <div class="col-lg-1 col-col-md-4 col-sm-12"></div>
                             <div class="col-lg-5 col-col-md-4 col-sm-12 pb-2 align-content-center">
-                                <h3 class="text-white text-center mb-5" data-aos="fade-up">Soft Skills</h3>
+                                <h3 class="text-white text-center mb-5 mt-2" data-aos="fade-up">Soft Skills</h3>
                                 <div class="row">
                                     <div class="softSkills mt-2" data-aos="fade-up">
                                         <div >
