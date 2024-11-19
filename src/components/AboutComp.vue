@@ -43,6 +43,9 @@ export default {
 }
 </script>
 <style scoped>
+    .container-fluid{
+        width:100vw !important;
+    }
     #pic{
         min-height:100vh;
         max-height: auto;
