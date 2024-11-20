@@ -239,6 +239,7 @@ import ProjectsComp from '@/components/ProjectsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 import SpinnerComp from '@/components/SpinnerComp.vue';
+
 export default {
 components:{
     NavbarComp,
@@ -270,6 +271,7 @@ computed:{
 mounted(){
     this.getData
 }
+
 }
 </script>
 <style scoped>
