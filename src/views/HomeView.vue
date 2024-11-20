@@ -131,7 +131,8 @@
                                         </div>
                                     </div>
                                     <div class="softSkills mt-2" data-aos="fade-up">
-                                        <div>
+                                        <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                                            <div>
                                             <i :class="skill.softSkills[2].iconClass"></i>
                                         </div>
                                         <div>
@@ -140,6 +141,8 @@
                                         <div>
                                             {{ skill.softSkills[2].description }}
                                         </div>
+                                        </a>
+                                        
                                     </div>
                                     <div class="softSkills mt-2" data-aos="fade-up">
                                         <div>
@@ -239,7 +242,6 @@ import ProjectsComp from '@/components/ProjectsComp.vue';
 import ContactComp from '@/components/ContactComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
 import SpinnerComp from '@/components/SpinnerComp.vue';
-
 export default {
 components:{
     NavbarComp,
