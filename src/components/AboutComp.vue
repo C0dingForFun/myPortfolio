@@ -19,7 +19,7 @@
                             <p><span>Aspiring:</span> {{ myDescription.aspiringToBe }}</p>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a href="" class="cv text-center" download="">Download CV</a>
+                            <a href="https://c0dingforfun.github.io/portfolioimg/CV/Resume.pdf" target="blank" class="cv" download>Download CV</a>
                         </div>
                     </div> 
                 </div>
@@ -93,7 +93,17 @@ export default {
     .cv{
         display: flex;
         justify-content: center;
+        align-items: center;
+        border-radius:20px;
+        margin-bottom:10px;
+        border:solid 1px transparent;
         padding:0.1em;
+        transition:0.7s;
+    }
+    .cv:hover{
+        background-color: #125a3e;
+        color:#ffc695;
+        border:solid 1px #ffc695;
     }
     .me{
         width:420px;

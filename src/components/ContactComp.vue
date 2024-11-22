@@ -44,7 +44,7 @@
                         <textarea class="form-control" name="message" rows="5" placeholder="Message" v-model="message"></textarea>
                       </div>
                       <div class="text-center mt-4 send mb-2">
-                        <button type="submit" @click.prevent="check()">Send Message</button> <br>
+                        <button type="submit" @click.prevent="check()">Send Message</button>
                       </div>
                     </form>
                   </div>
@@ -131,11 +131,14 @@ export default {
         color: aliceblue;
         border-radius:5px;
         background-color: #125a3e;
-        transition:1s;
+        border:solid 1px transparent;
+        padding:0.3em;
+        transition:0.7s;
     }
     button:hover{
-        background-color:aliceblue;
+        background-color:#ffc695;
         color:#125a3e;
-        transform: translateY(-8px);
+        border:solid 1px #125a3e;
+        transform: translateY(-7px);
     }
 </style>
