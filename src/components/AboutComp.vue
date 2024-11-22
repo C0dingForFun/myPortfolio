@@ -18,6 +18,9 @@
                             <p><span>Age:</span> {{ myDescription.age }}</p>
                             <p><span>Aspiring:</span> {{ myDescription.aspiringToBe }}</p>
                         </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="cv text-center" download="">Download CV</a>
+                        </div>
                     </div> 
                 </div>
             </div>
@@ -86,6 +89,11 @@ export default {
     span{
         color:#ffc695;
         font-weight: 900;
+    }
+    .cv{
+        display: flex;
+        justify-content: center;
+        padding:0.1em;
     }
     .me{
         width:420px;

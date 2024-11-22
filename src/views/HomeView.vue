@@ -131,8 +131,7 @@
                                         </div>
                                     </div>
                                     <div class="softSkills mt-2" data-aos="fade-up">
-                                        <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
-                                            <div>
+                                        <div>
                                             <i :class="skill.softSkills[2].iconClass"></i>
                                         </div>
                                         <div>
@@ -141,8 +140,6 @@
                                         <div>
                                             {{ skill.softSkills[2].description }}
                                         </div>
-                                        </a>
-                                        
                                     </div>
                                     <div class="softSkills mt-2" data-aos="fade-up">
                                         <div>
