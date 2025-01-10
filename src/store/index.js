@@ -35,7 +35,7 @@ export default createStore({
   actions: {
     async getData({commit}){
       try {
-        let fetchedInfo = await fetch('https://c0dingforfun.github.io/firstAPI/data/data.json')
+        let fetchedInfo = await fetch('https://c0dingforfun.github.io/portfolio_api/data/data.json')
         let myData = await fetchedInfo.json()
         let {aboutMe,projects,education,skills,workExp,testimonials} = myData
         commit('setAboutMe', aboutMe)  

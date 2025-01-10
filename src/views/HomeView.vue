@@ -304,6 +304,9 @@ mounted(){
         cursor:pointer;
         box-shadow:8px 8px 8px 10px rgb(0,0,0,0.5)
     }
+    .mysql{
+        transition: 0.5s;
+    }
     .codeSkills:hover .mysql{
         filter:drop-shadow(2px 2px #125a3e);
         transform: rotate(5deg);
