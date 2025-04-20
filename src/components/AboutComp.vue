@@ -9,7 +9,7 @@
                     <h5 data-aos="fade-left">Discover</h5>
                     <h2 data-aos="fade-left" data-aos-delay="100"><b>About Me</b></h2>
                     <p data-aos="fade-left" data-aos-delay="200">{{myDescription.me}}</p> 
-                    <div class="row justify-content-between extra-info rounded" data-aos="fade-left" data-aos-delay="400">
+                    <div class="row justify-content-between extra-info rounded pt-2" data-aos="fade-left" data-aos-delay="400">
                         <div class="col-6">
                             <p> <span>Name:</span> {{ myDescription.name }}</p>
                             <p><span>Hobbies:</span> {{ myDescription.hobbies }}</p>
